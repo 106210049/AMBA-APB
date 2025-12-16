@@ -205,7 +205,7 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="a2GSyb7jSM-kUnWI1C4--41" connectable="0" parent="1" style="group" value="" vertex="1">
-          <mxGeometry height="410" width="480" x="200" y="160" as="geometry" />
+          <mxGeometry height="410" width="480" x="160" y="160" as="geometry" />
         </mxCell>
         <mxCell id="a2GSyb7jSM-kUnWI1C4--1" parent="a2GSyb7jSM-kUnWI1C4--41" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;APB Master/ Bridge&lt;/font&gt;" vertex="1">
           <mxGeometry height="400" width="160" x="160" y="10" as="geometry" />
