@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.2.7">
   <diagram name="Page-1" id="jnjCFz4BIrWgyNoqFDZ2">
-    <mxGraphModel dx="402" dy="430" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="282" dy="301" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -70,7 +70,7 @@
             <mxPoint x="560" y="300.04" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="fT8M9ScFQOBePI6z_zcI-18" edge="1" parent="1" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" value="">
+        <mxCell id="fT8M9ScFQOBePI6z_zcI-18" edge="1" parent="1" source="fT8M9ScFQOBePI6z_zcI-7" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;exitX=0;exitY=0.55;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
             <mxPoint x="550" y="340" as="sourcePoint" />
             <mxPoint x="400" y="340" as="targetPoint" />
@@ -171,6 +171,21 @@
         </mxCell>
         <mxCell id="fT8M9ScFQOBePI6z_zcI-60" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="PWDATA[31:0]" vertex="1">
           <mxGeometry height="20" width="60" x="450" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="fT8M9ScFQOBePI6z_zcI-61" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="PSLVERR" vertex="1">
+          <mxGeometry height="20" width="60" x="450" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="fT8M9ScFQOBePI6z_zcI-62" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="PWRITE" vertex="1">
+          <mxGeometry height="20" width="60" x="450" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="fT8M9ScFQOBePI6z_zcI-63" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="PRDATA[31:0]" vertex="1">
+          <mxGeometry height="20" width="100" x="430" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="fT8M9ScFQOBePI6z_zcI-64" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="PPROT[2:0]" vertex="1">
+          <mxGeometry height="20" width="100" x="430" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="fT8M9ScFQOBePI6z_zcI-65" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="PSTRB[3:0]" vertex="1">
+          <mxGeometry height="20" width="100" x="430" y="400" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
