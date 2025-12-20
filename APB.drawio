@@ -1514,11 +1514,11 @@
             <mxPoint x="185" y="999.71" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="klW8fpUlPJgTIeYhdHyT-1" parent="1" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="PRESETn" vertex="1">
-          <mxGeometry height="20" width="80" x="495" y="1010" as="geometry" />
+        <mxCell id="klW8fpUlPJgTIeYhdHyT-1" parent="1" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="CLK" vertex="1">
+          <mxGeometry height="20" width="45" x="530" y="1010" as="geometry" />
         </mxCell>
-        <mxCell id="klW8fpUlPJgTIeYhdHyT-2" parent="1" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="PRESETn" vertex="1">
-          <mxGeometry height="20" width="80" x="500" y="770" as="geometry" />
+        <mxCell id="klW8fpUlPJgTIeYhdHyT-2" parent="1" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="CLK" vertex="1">
+          <mxGeometry height="20" width="50" x="530" y="770" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
