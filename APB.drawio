@@ -1255,9 +1255,6 @@
         <mxCell id="SQPg1xFCPB4S8jlN9wA0-47" parent="1" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="PADDR[31:0]" vertex="1">
           <mxGeometry height="20" width="80" x="320" y="470" as="geometry" />
         </mxCell>
-        <mxCell id="SQPg1xFCPB4S8jlN9wA0-78" parent="1" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="available" vertex="1">
-          <mxGeometry height="20" width="75" x="165" y="400" as="geometry" />
-        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
