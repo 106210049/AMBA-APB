@@ -1027,7 +1027,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="Z9pwbdXoX_hcj5ABvGd6" name="Page-6">
-    <mxGraphModel dx="1188" dy="619" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="679" dy="354" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1364,6 +1364,21 @@
         </mxCell>
         <mxCell id="SQPg1xFCPB4S8jlN9wA0-108" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="PREADY" vertex="1">
           <mxGeometry height="30" width="60" x="500" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="SQPg1xFCPB4S8jlN9wA0-109" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1" vertex="1">
+          <mxGeometry height="30" width="30" x="105" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="SQPg1xFCPB4S8jlN9wA0-110" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="0" vertex="1">
+          <mxGeometry height="30" width="30" x="105" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="SQPg1xFCPB4S8jlN9wA0-112" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="0" vertex="1">
+          <mxGeometry height="30" width="30" x="210" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="SQPg1xFCPB4S8jlN9wA0-113" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="0" vertex="1">
+          <mxGeometry height="30" width="30" x="305" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="SQPg1xFCPB4S8jlN9wA0-114" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="PSEL" vertex="1">
+          <mxGeometry height="30" width="55" x="335" y="660" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
