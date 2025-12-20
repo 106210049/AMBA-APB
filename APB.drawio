@@ -1027,7 +1027,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="Z9pwbdXoX_hcj5ABvGd6" name="Page-6">
-    <mxGraphModel dx="274" dy="143" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="815" dy="425" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1200,6 +1200,12 @@
             <mxPoint x="50" y="420" as="sourcePoint" />
             <mxPoint x="90" y="420" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="SQPg1xFCPB4S8jlN9wA0-26" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="PWRITE" vertex="1">
+          <mxGeometry height="30" width="60" x="20" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="SQPg1xFCPB4S8jlN9wA0-28" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="PENABLE" vertex="1">
+          <mxGeometry height="30" width="60" x="20" y="420" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
