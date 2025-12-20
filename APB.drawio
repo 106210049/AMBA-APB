@@ -1012,7 +1012,7 @@
           <mxGeometry height="30" width="110" x="480" y="255" as="geometry" />
         </mxCell>
         <mxCell id="53yCwSnacV5HaPOzVaq7-17" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;next_state&lt;/font&gt;&lt;/b&gt;" vertex="1">
-          <mxGeometry height="30" width="110" x="340" y="260" as="geometry" />
+          <mxGeometry height="30" width="100" x="350" y="255" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
