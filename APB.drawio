@@ -1639,13 +1639,13 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="GAAmpud45MDEqdfcT8vw-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="31" vertex="1">
+        <mxCell id="GAAmpud45MDEqdfcT8vw-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fontStyle=1" value="31" vertex="1">
           <mxGeometry height="40" width="40" x="80" y="120" as="geometry" />
         </mxCell>
-        <mxCell id="GAAmpud45MDEqdfcT8vw-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="30:2" vertex="1">
+        <mxCell id="GAAmpud45MDEqdfcT8vw-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fontStyle=1" value="30:2" vertex="1">
           <mxGeometry height="40" width="400" x="120" y="120" as="geometry" />
         </mxCell>
-        <mxCell id="GAAmpud45MDEqdfcT8vw-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="1:0" vertex="1">
+        <mxCell id="GAAmpud45MDEqdfcT8vw-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fontStyle=1" value="1:0" vertex="1">
           <mxGeometry height="40" width="80" x="520" y="120" as="geometry" />
         </mxCell>
         <mxCell id="GAAmpud45MDEqdfcT8vw-5" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;strokeWidth=4;" value="">
@@ -1674,6 +1674,12 @@
         </mxCell>
         <mxCell id="GAAmpud45MDEqdfcT8vw-10" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;Waiting Count&lt;/span&gt;" vertex="1">
           <mxGeometry height="30" width="100" x="510" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="GAAmpud45MDEqdfcT8vw-11" parent="1" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;rotation=-90;" value="" vertex="1">
+          <mxGeometry height="520" width="20" x="330" y="-160" as="geometry" />
+        </mxCell>
+        <mxCell id="GAAmpud45MDEqdfcT8vw-12" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;PADDR[31:0]&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="130" x="275" y="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
