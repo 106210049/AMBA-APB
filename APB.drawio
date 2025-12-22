@@ -1546,7 +1546,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="2iZnL7Nz-Fwp7kpPDXx5-53" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="memory[PADDR[30:2]" vertex="1">
-          <mxGeometry height="30" width="95" x="140" y="336.12" as="geometry" />
+          <mxGeometry height="30" width="105" x="130" y="336.12" as="geometry" />
         </mxCell>
         <mxCell id="2iZnL7Nz-Fwp7kpPDXx5-54" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="0" vertex="1">
           <mxGeometry height="30" width="26.25" x="290" y="366.12" as="geometry" />
