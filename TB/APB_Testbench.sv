@@ -52,10 +52,13 @@ module APB_Top_tb;
         wait(uut.master_inst.current_state == 2'b10); 
         @(posedge PCLK);
         
-        while (!uut.PREADY_bus) @(posedge PCLK);
+        // Vòng lặp chờ PREADY (Xử lý Waiting States)
+        while (!uut.PREADY_bus) begin
+            $display("  [WAITING] Slave is not ready at Time=%0t", $time);
+            @(posedge PCLK);
+        end
         
-        // Hiển thị thêm PSLVERR để kiểm tra lỗi khi ghi
-        $display("[WRITE] Addr: 0x%h | Data: 0x%h | PSLVERR: %b", addr, data, PSLVERR);
+        $display("[WRITE] Addr: 0x%h | Data: 0x%h | PSLVERR: %b | Time: %0t", addr, data, PSLVERR, $time);
         WRITE = 0;
     end
     endtask
@@ -75,9 +78,12 @@ module APB_Top_tb;
         wait(uut.master_inst.current_state == 2'b10);
         @(posedge PCLK);
         
-        while (!uut.PREADY_bus) @(posedge PCLK);
+        while (!uut.PREADY_bus) begin
+            $display("  [WAITING] Slave is not ready at Time=%0t", $time);
+            @(posedge PCLK);
+        end
 
-        $display("[READ]  Addr: 0x%h | Data: 0x%h | PSLVERR: %b", addr, APB_READ_DATA_OUT, PSLVERR);
+        $display("[READ]  Addr: 0x%h | Data: 0x%h | PSLVERR: %b | Time: %0t", addr, APB_READ_DATA_OUT, PSLVERR, $time);
         READ = 0;
     end
     endtask
@@ -100,17 +106,25 @@ module APB_Top_tb;
         #10;
 
         $display("--- Starting Testcase 1: Slave 0 Access (MSB=0) ---");
-        apb_write(32'h0000_000A, 32'hDEADBEEF); 
-        apb_read(32'h0000_000A);                
+        apb_write(32'h0000_0008, 32'hDEADBEEF); // Addr 8 (Wait=0)
+        apb_read(32'h0000_0008);                
 
         $display("\n--- Starting Testcase 2: Slave 1 Access (MSB=1) ---");
-        apb_write(32'h8000_0005, 32'hCAFEBABE); 
-        apb_read(32'h8000_0005);                
+        apb_write(32'h8000_0004, 32'hCAFEBABE); // Addr 4 (Wait=0)
+        apb_read(32'h8000_0004);                
 
-        $display("\n--- Starting Testcase 3: Address Range Error (PSLVERR) ---");
-        // Kiểm tra PSLVERR xuất hiện ngay khi thực hiện lệnh WRITE sai địa chỉ
+        $display("\n--- Starting Testcase 3: Address Range Error ---");
         apb_write(32'h0000_0500, 32'h12345678); 
         apb_read(32'h0000_0500);
+
+        $display("\n--- Starting Testcase 4: Dynamic Waiting States (PADDR[1:0]) ---");
+        // Test trễ 3 chu kỳ (Địa chỉ kết thúc bằng 11)
+        $display("Testing 3-cycle wait state:");
+        apb_write(32'h0000_0003, 32'hAAAA_BBBB);
+        
+        // Test trễ 1 chu kỳ (Địa chỉ kết thúc bằng 01)
+        $display("Testing 1-cycle wait state:");
+        apb_read(32'h0000_0001);
 
         #100;
         $display("\n--- Simulation Finished ---");
@@ -119,8 +133,8 @@ module APB_Top_tb;
 
     // Monitor signals
     initial begin
-        $monitor("Time=%0t | State=%b | PSEL=%b | PADDR=%h | PWRITE=%b | PENABLE=%b | PREADY=%b", 
-                 $time, uut.master_inst.current_state, uut.PSELx, uut.PADDR, uut.PWRITE, uut.PENABLE, uut.PREADY_bus);
+        $monitor("Time=%0t | State=%b | PSEL=%b | PADDR=%h | PWRITE=%b | PREADY=%b", 
+                 $time, uut.master_inst.current_state, uut.PSELx, uut.PADDR, uut.PWRITE, uut.PREADY_bus);
     end
 
 endmodule
