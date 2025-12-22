@@ -114,8 +114,8 @@ module APB_Top_tb;
         apb_read(32'h8000_0004);                
 
         $display("\n--- Starting Testcase 3: Address Range Error ---");
-        apb_write(32'h0000_0500, 32'h12345678); 
-        apb_read(32'h0000_0500);
+        apb_write(32'h0000_5000, 32'hAAAA_BBBB); 
+        apb_read(32'h0000_5000);
 
         $display("\n--- Starting Testcase 4: Dynamic Waiting States (PADDR[1:0]) ---");
         // Test trễ 3 chu kỳ (Địa chỉ kết thúc bằng 11)
