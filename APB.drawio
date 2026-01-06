@@ -770,7 +770,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="SknqKBh_gCD4dyHCKlg9" name="APB Master Design">
-    <mxGraphModel dx="1181" dy="630" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1722" dy="919" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1471,6 +1471,24 @@
           <mxGeometry height="50" relative="1" width="50" as="geometry">
             <mxPoint x="440" y="1120" as="sourcePoint" />
             <mxPoint x="440" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e50aoKnA6JExY3UPRFlq-44" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;rounded=0;strokeColor=#A4A4A4;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="519.4300000000001" y="1120" as="sourcePoint" />
+            <mxPoint x="519.4300000000001" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e50aoKnA6JExY3UPRFlq-45" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;rounded=0;strokeColor=#A4A4A4;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="600" y="1120" as="sourcePoint" />
+            <mxPoint x="600" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e50aoKnA6JExY3UPRFlq-46" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;rounded=0;strokeColor=#A4A4A4;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="680" y="1120" as="sourcePoint" />
+            <mxPoint x="680" y="480" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
