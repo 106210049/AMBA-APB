@@ -1218,14 +1218,8 @@
         </mxCell>
         <mxCell id="6xqymRG6NNWjAuOQHXzw-55" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="1400" y="400" as="sourcePoint" />
-            <mxPoint x="1680" y="400" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="6xqymRG6NNWjAuOQHXzw-56" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
-          <mxGeometry height="50" relative="1" width="50" as="geometry">
             <mxPoint x="960" y="400" as="sourcePoint" />
-            <mxPoint x="1160" y="400" as="targetPoint" />
+            <mxPoint x="1680" y="400" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="6xqymRG6NNWjAuOQHXzw-57" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;PWRITE&lt;/b&gt;&lt;/span&gt;" vertex="1">
