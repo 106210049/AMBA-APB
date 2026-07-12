@@ -1,69 +1,125 @@
 module APB_Slave (
-    input wire PCLK, PRESETn,
-    input wire PENABLE, PWRITE,
-    input wire PSELx,
-    input wire [31:0] PADDR, 
-    input wire [31:0] PWDATA,
+    input  logic        PCLK,
+    input  logic        PRESETn,
+    input  logic        PENABLE,
+    input  logic        PWRITE,
+    input  logic        PSELx,
+    input  logic [31:0] PADDR,
+    input  logic [31:0] PWDATA,
 
-    output reg [31:0] PRDATA,
-    output reg PREADY, PSLVERR
+    output logic [31:0] PRDATA,
+    output logic        PREADY,
+    output logic        PSLVERR
 );
-    reg [31:0] memory [1023:0];
-    
-    // Bộ đếm để theo dõi số chu kỳ đã chờ
-    reg [1:0] count_reg;
-    
-    // Xác định số chu kỳ cần chờ dựa trên 2 bit cuối của địa chỉ
-    wire [1:0] target_wait;
-    assign target_wait = PADDR[1:0];
 
-    always @(posedge PCLK or negedge PRESETn) begin
-        if(!PRESETn) begin
-            PREADY  <= 0;
-            PSLVERR <= 0;
-            PRDATA  <= 0;
-            count_reg <= 0;
+    //==================================================
+    // DATA PATH
+    //==================================================
+    logic [31:0] memory [0:1023];
+
+    logic [28:0] addr_index;
+
+    //==================================================
+    // CONTROL PATH
+    //==================================================
+    logic [1:0] count_reg;
+    logic [1:0] target_wait;
+
+    logic addr_ok;
+    logic wait_done;
+    logic read_en;
+    logic write_en;
+
+    //--------------------------------------------------
+    // Address Decode
+    //--------------------------------------------------
+    assign target_wait = PADDR[1:0];
+    assign addr_index  = PADDR[30:2];
+
+    assign addr_ok =
+        (addr_index < 1024);
+
+    //--------------------------------------------------
+    // Wait-State Complete
+    //--------------------------------------------------
+    assign wait_done =
+        (count_reg == target_wait);
+
+    //--------------------------------------------------
+    // Wait-State Counter
+    //--------------------------------------------------
+    always_ff @(posedge PCLK or negedge PRESETn) begin
+        if (!PRESETn) begin
+            count_reg <= 2'd0;
         end
         else begin
-            if(PSELx) begin
-                // Giai đoạn ACCESS (PENABLE = 1)
-                if(PENABLE) begin
-                    if(count_reg < target_wait) begin
-                        // Chưa đợi đủ số chu kỳ yêu cầu
-                        count_reg <= count_reg + 1'b1;
-                        PREADY    <= 0;
-                    end
-                    else begin
-                        // Đã đợi đủ, thực hiện Read/Write và bật PREADY
-                        PREADY <= 1;
-                        count_reg <= 0; // Reset bộ đếm cho giao dịch sau
 
-                        if(PADDR[30:2] < 1024) begin
-                            PSLVERR <= 0;
-                            if(PWRITE)
-                                memory[PADDR[30:2]] <= PWDATA;
-                            else
-                                PRDATA <= memory[PADDR[30:2]];
-                        end
-                        else begin
-                            // Lỗi địa chỉ vượt quá vùng nhớ
-                            PSLVERR <= 1;
-                        end
-                    end
-                end
-                else begin
-                    // Giai đoạn SETUP (PSEL=1 nhưng PENABLE=0)
-                    PREADY    <= 0;
-                    count_reg <= 0;
-                end
+            if (PSELx && PENABLE) begin
+
+                if (!wait_done)
+                    count_reg <= count_reg + 1'b1;
+                else
+                    count_reg <= 2'd0;
+
             end
             else begin
-                // IDLE: Slave không được chọn
-                PREADY    <= 0;
-                PSLVERR   <= 0;
-                count_reg <= 0;
-                PRDATA    <= 0;
+                count_reg <= 2'd0;
             end
+
         end
     end
+
+    //--------------------------------------------------
+    // APB Handshake
+    //--------------------------------------------------
+    assign PREADY =
+        PSELx   &&
+        PENABLE &&
+        wait_done;
+
+    //--------------------------------------------------
+    // Error Response
+    //--------------------------------------------------
+    assign PSLVERR =
+        PREADY &&
+        !addr_ok;
+
+    //--------------------------------------------------
+    // Read / Write Enable
+    //--------------------------------------------------
+    assign write_en =
+        PREADY  &&
+        PWRITE  &&
+        addr_ok;
+
+    assign read_en =
+        PREADY  &&
+        !PWRITE &&
+        addr_ok;
+
+    //==================================================
+    // DATA PATH : MEMORY WRITE
+    //==================================================
+    integer i;
+
+    always_ff @(posedge PCLK or negedge PRESETn) begin
+        if (!PRESETn) begin
+            for (i = 0; i < 1024; i++)
+                memory[i] <= '0;
+        end
+        else if (write_en) begin
+            memory[addr_index] <= PWDATA;
+        end
+    end
+
+    //==================================================
+    // DATA PATH : MEMORY READ
+    //==================================================
+    always_comb begin
+        PRDATA = 32'd0;
+
+        if (read_en)
+            PRDATA = memory[addr_index];
+    end
+
 endmodule
