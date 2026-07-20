@@ -1,0 +1,131 @@
+# vsim -c -coverage work.apb_tb_top "+TESTNAME=FIXED_ADDR" -onfinish final -do "run -all; coverage save -onexit FIXED_ADDR.ucdb;" 
+# Start time: 10:32:26 on Jul 20,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.testcase_pkg(fast)
+# Loading work.testbench_sv_unit(fast)
+# Loading work.apb_tb_top(fast)
+# Loading work.apb_test(fast)
+# Loading work.apb_checker(fast)
+# Loading work.apb_if(fast)
+# run -all
+# [TEST] TESTNAME=FIXED_ADDR TIMEOUT=2000
+# [0] TRANS | WRITE | PSELx=01 | PSTRB=1010 |PADDR=0x4 | PWDATA=0x21 | PRDATA=0x0
+# [0] TRANS | READ  | PSELx=01 | PSTRB=0000 |PADDR=0x4 | PWDATA=0x0 | PRDATA=0x0
+# [0] TRANS | READ  | PSELx=01 | PSTRB=0000 |PADDR=0x4 | PWDATA=0x0 | PRDATA=0x0
+# [0] TRANS | READ  | PSELx=01 | PSTRB=0000 |PADDR=0x4 | PWDATA=0x0 | PRDATA=0x0
+# [0] TRANS | READ  | PSELx=01 | PSTRB=0000 |PADDR=0x4 | PWDATA=0x0 | PRDATA=0x0
+# [0] TRANS | READ  | PSELx=01 | PSTRB=0000 |PADDR=0x4 | PWDATA=0x0 | PRDATA=0x0
+# [0] TRANS | WRITE | PSELx=01 | PSTRB=0110 |PADDR=0x4 | PWDATA=0xf | PRDATA=0x0
+# [0] TRANS | WRITE | PSELx=01 | PSTRB=0111 |PADDR=0x4 | PWDATA=0x77 | PRDATA=0x0
+# [0] TRANS | WRITE | PSELx=01 | PSTRB=0111 |PADDR=0x4 | PWDATA=0x99 | PRDATA=0x0
+# [0] TRANS | WRITE | PSELx=01 | PSTRB=0010 |PADDR=0x4 | PWDATA=0x53 | PRDATA=0x0
+# [235000][MON-SETUP] PADDR=0x4 W=1 PSELx=01
+# [PASS] PREADY access phase OK
+# [PASS] Valid address response OK
+# [PASS] PENABLE protocol OK
+# [PASS] VALID APB RESPONSE
+# [COVER] Successful APB transfer observed
+# [245000] DRV | WRITE | PSELx=01 | PSTRB=1010 |PADDR=0x4 | PWDATA=0x21 | PRDATA=0x0
+# [245000][WRITE][MON-ACCESS] PADDR=0x4 PSELx=01 PWDATA=0x21
+# [245000][SB-WRITE][S0] ADDR=0x4 IDX=1 DATA=0x21
+# [265000][MON-SETUP] PADDR=0x4 W=0 PSELx=01
+# [PASS] PREADY access phase OK
+# [PASS] Valid address response OK
+# [PASS] PENABLE protocol OK
+# [PASS] VALID APB RESPONSE
+# [COVER] Successful APB transfer observed
+# [275000] DRV | READ  | PSELx=01 | PSTRB=0000 |PADDR=0x4 | PWDATA=0x0 | PRDATA=0x0
+# [275000][READ][MON-ACCESS] PADDR=0x4 PSELx=01 PRDATA=0x0
+# [275000][SB-PASS] PSELx=01 ADDR=0x4 IDX=1 EXP=0x0 ACT=0x0
+# [295000][MON-SETUP] PADDR=0x4 W=0 PSELx=01
+# [PASS] PREADY access phase OK
+# [PASS] Valid address response OK
+# [PASS] PENABLE protocol OK
+# [PASS] VALID APB RESPONSE
+# [COVER] Successful APB transfer observed
+# [305000] DRV | READ  | PSELx=01 | PSTRB=0000 |PADDR=0x4 | PWDATA=0x0 | PRDATA=0x0
+# [305000][READ][MON-ACCESS] PADDR=0x4 PSELx=01 PRDATA=0x0
+# [305000][SB-PASS] PSELx=01 ADDR=0x4 IDX=1 EXP=0x0 ACT=0x0
+# [325000][MON-SETUP] PADDR=0x4 W=0 PSELx=01
+# [PASS] PREADY access phase OK
+# [PASS] Valid address response OK
+# [PASS] PENABLE protocol OK
+# [PASS] VALID APB RESPONSE
+# [COVER] Successful APB transfer observed
+# [335000] DRV | READ  | PSELx=01 | PSTRB=0000 |PADDR=0x4 | PWDATA=0x0 | PRDATA=0x0
+# [335000][READ][MON-ACCESS] PADDR=0x4 PSELx=01 PRDATA=0x0
+# [335000][SB-PASS] PSELx=01 ADDR=0x4 IDX=1 EXP=0x0 ACT=0x0
+# [355000][MON-SETUP] PADDR=0x4 W=0 PSELx=01
+# [PASS] PREADY access phase OK
+# [PASS] Valid address response OK
+# [PASS] PENABLE protocol OK
+# [PASS] VALID APB RESPONSE
+# [COVER] Successful APB transfer observed
+# [365000] DRV | READ  | PSELx=01 | PSTRB=0000 |PADDR=0x4 | PWDATA=0x0 | PRDATA=0x0
+# [365000][READ][MON-ACCESS] PADDR=0x4 PSELx=01 PRDATA=0x0
+# [365000][SB-PASS] PSELx=01 ADDR=0x4 IDX=1 EXP=0x0 ACT=0x0
+# [385000][MON-SETUP] PADDR=0x4 W=0 PSELx=01
+# [PASS] PREADY access phase OK
+# [PASS] Valid address response OK
+# [PASS] PENABLE protocol OK
+# [PASS] VALID APB RESPONSE
+# [COVER] Successful APB transfer observed
+# [395000] DRV | READ  | PSELx=01 | PSTRB=0000 |PADDR=0x4 | PWDATA=0x0 | PRDATA=0x0
+# [395000][READ][MON-ACCESS] PADDR=0x4 PSELx=01 PRDATA=0x0
+# [395000][SB-PASS] PSELx=01 ADDR=0x4 IDX=1 EXP=0x0 ACT=0x0
+# [415000][MON-SETUP] PADDR=0x4 W=1 PSELx=01
+# [PASS] PREADY access phase OK
+# [PASS] Valid address response OK
+# [PASS] PENABLE protocol OK
+# [PASS] VALID APB RESPONSE
+# [COVER] Successful APB transfer observed
+# [425000] DRV | WRITE | PSELx=01 | PSTRB=0110 |PADDR=0x4 | PWDATA=0xf | PRDATA=0x0
+# [425000][WRITE][MON-ACCESS] PADDR=0x4 PSELx=01 PWDATA=0xf
+# [425000][SB-WRITE][S0] ADDR=0x4 IDX=1 DATA=0xf
+# [445000][MON-SETUP] PADDR=0x4 W=1 PSELx=01
+# [PASS] PREADY access phase OK
+# [PASS] Valid address response OK
+# [PASS] PENABLE protocol OK
+# [PASS] VALID APB RESPONSE
+# [COVER] Successful APB transfer observed
+# [455000] DRV | WRITE | PSELx=01 | PSTRB=0111 |PADDR=0x4 | PWDATA=0x77 | PRDATA=0x0
+# [455000][WRITE][MON-ACCESS] PADDR=0x4 PSELx=01 PWDATA=0x77
+# [455000][SB-WRITE][S0] ADDR=0x4 IDX=1 DATA=0x77
+# [475000][MON-SETUP] PADDR=0x4 W=1 PSELx=01
+# [PASS] PREADY access phase OK
+# [PASS] Valid address response OK
+# [PASS] PENABLE protocol OK
+# [PASS] VALID APB RESPONSE
+# [COVER] Successful APB transfer observed
+# [485000] DRV | WRITE | PSELx=01 | PSTRB=0111 |PADDR=0x4 | PWDATA=0x99 | PRDATA=0x0
+# [485000][WRITE][MON-ACCESS] PADDR=0x4 PSELx=01 PWDATA=0x99
+# [485000][SB-WRITE][S0] ADDR=0x4 IDX=1 DATA=0x99
+# [505000][MON-SETUP] PADDR=0x4 W=1 PSELx=01
+# [PASS] PREADY access phase OK
+# [PASS] Valid address response OK
+# [PASS] PENABLE protocol OK
+# [PASS] VALID APB RESPONSE
+# [COVER] Successful APB transfer observed
+# [515000] DRV | WRITE | PSELx=01 | PSTRB=0010 |PADDR=0x4 | PWDATA=0x53 | PRDATA=0x0
+# [515000][WRITE][MON-ACCESS] PADDR=0x4 PSELx=01 PWDATA=0x53
+# [515000][SB-WRITE][S0] ADDR=0x4 IDX=1 DATA=0x53
+# [TEST] TIMEOUT reached
+# 
+# =============== SCOREBOARD SUMMARY ===============
+#  Transactions : 10
+#  Writes       : 5
+#  Reads        : 5
+#  Errors       : 0
+#  Pass Rate    : 100.00%
+#  RESULT       : PASS ✅
+# Coverage APB with ADDR and SELx = 38.89 %
+# Coverage APB with WRITE/READ = 100.00 %
+# Coverage PSTRB = 66.67 %
+# ==================================================
+# 
+# ** Note: $finish    : ./TB/test.sv(117)
+#    Time: 2 us  Iteration: 1  Instance: /apb_tb_top/t1
+# Break in Module apb_tb_top at ./TB/interface.sv line 24
+#  coverage save -onexit FIXED_ADDR.ucdb
+# 

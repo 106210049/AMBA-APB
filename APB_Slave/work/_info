@@ -1,0 +1,243 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/questasim64_10.7c/examples
+T_opt
+!s110 1784518347
+V1SF<YB=X3LDjfHkkoF@JA3
+04 10 4 work apb_tb_top fast 0
+=1-d8bbc125b003-6a5d96cb-40-3180
+o-quiet -auto_acc_if_foreign -work work
+Z1 tCvgOpt 0
+n@_opt
+OL;O;10.7c;67
+R0
+4apb_checker
+Z2 DXx6 sv_std 3 std 0 22 d=_JfHTnXCN[H5FjiaJJc0
+Z3 DXx4 work 12 testcase_pkg 0 22 AoJ=WNbTW?<]?[5kicgRR3
+Z4 DXx4 work 17 testbench_sv_unit 0 22 SaG6niMY0:5Tf>bDQZYH53
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+!i10b 1
+!s100 5`l<1WJ4dkn>1`Kmg7M492
+IW8ne[hQT]F8`f@;ABk1jk0
+Z6 !s105 testbench_sv_unit
+S1
+Z7 dD:/VLSI/Projects/APB_Slave
+w1784484182
+8.\TB\apb_checker.sv
+Z8 F.\TB\apb_checker.sv
+L0 1
+Z9 OL;L;10.7c;67
+31
+Z10 !s108 1784518375.000000
+!s107 .\TB\test.sv|.\TB\apb_checker.sv|.\TB\env.sv|.\TB\agent.sv|.\TB\scoreboard.sv|.\TB\monitor.sv|.\TB\driver.sv|.\TB\generator.sv|.\TB\testcase_pkg.sv|.\TB\transaction.sv|.\TB\interface.sv|.\RTL\APB_Slave.sv|./TB/testbench.sv|./RTL/APB_Slave_TOP.sv|
+Z11 !s90 -reportprogress|300|+cover|+define+STROBES|+define+BIG_EDIAN|./RTL/APB_Slave_TOP.sv|./TB/testbench.sv|
+!i113 0
+Z12 !s102 +cover
+Z13 o+cover -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z14 !s92 +cover +define+STROBES +define+BIG_EDIAN -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+Yapb_if
+R2
+Z15 !s110 1784518375
+!i10b 1
+!s100 >SN`^Uz@;600KI^m6OPSG2
+I]kaFMn<@H`54HYe:=WPfY2
+R5
+R6
+S1
+R7
+w1784484123
+8.\TB\interface.sv
+Z16 F.\TB\interface.sv
+L0 1
+R9
+r1
+!s85 0
+31
+R10
+Z17 !s107 .\TB\test.sv|.\TB\apb_checker.sv|.\TB\env.sv|.\TB\agent.sv|.\TB\scoreboard.sv|.\TB\monitor.sv|.\TB\driver.sv|.\TB\generator.sv|.\TB\testcase_pkg.sv|.\TB\transaction.sv|.\TB\interface.sv|.\RTL\APB_Slave.sv|./TB/testbench.sv|./RTL/APB_Slave_TOP.sv|
+R11
+!i113 0
+R12
+R13
+R14
+R1
+vAPB_Slave
+R2
+R15
+!i10b 1
+!s100 STK<=gAKao_S]U;iY@IQh1
+IZN2Uld64:hMbD6?l^=GAT2
+R5
+Z18 !s105 APB_Slave_TOP_sv_unit
+S1
+R7
+w1784508605
+8.\RTL\APB_Slave.sv
+F.\RTL\APB_Slave.sv
+L0 2
+R9
+r1
+!s85 0
+31
+R10
+R17
+R11
+!i113 0
+R12
+R13
+R14
+R1
+n@a@p@b_@slave
+vAPB_Slave_TOP
+R2
+R15
+!i10b 1
+!s100 h>FF[L9L:8[O8_HM;0l`L3
+IoAbl>]eI6?gdkW`2_``mH2
+R5
+R18
+S1
+R7
+w1784509087
+8./RTL/APB_Slave_TOP.sv
+F./RTL/APB_Slave_TOP.sv
+L0 5
+R9
+r1
+!s85 0
+31
+R10
+R17
+R11
+!i113 0
+R12
+R13
+R14
+R1
+n@a@p@b_@slave_@t@o@p
+vapb_tb_top
+R2
+R3
+R4
+R5
+r1
+!s85 0
+!i10b 1
+!s100 XSm:]Kk4NAUDD5R?9?hIe0
+Inng7XnFeY8:AOcW`UHd203
+R6
+S1
+R7
+w1784509081
+Z19 8./TB/testbench.sv
+Z20 F./TB/testbench.sv
+L0 19
+R9
+31
+R10
+R17
+R11
+!i113 0
+R12
+R13
+R14
+R1
+4apb_test
+R2
+R3
+R4
+R5
+r1
+!s85 0
+!i10b 1
+!s100 Wig`;=n79<6oT<nOjZK_=3
+IMZSQ4;^E]gZ>d4Tf86iUU2
+R6
+S1
+R7
+w1784484163
+8.\TB\test.sv
+Z21 F.\TB\test.sv
+L0 3
+R9
+31
+R10
+R17
+R11
+!i113 0
+R12
+R13
+R14
+R1
+Xtestbench_sv_unit
+!s115 apb_if
+R2
+R3
+VSaG6niMY0:5Tf>bDQZYH53
+r1
+!s85 0
+!i10b 1
+!s100 E69:LUMLE_m9Q4X^JkWPa1
+ISaG6niMY0:5Tf>bDQZYH53
+!i103 1
+S1
+R7
+w1784517195
+R19
+R20
+R16
+F.\TB\transaction.sv
+Z22 F.\TB\testcase_pkg.sv
+F.\TB\generator.sv
+F.\TB\driver.sv
+F.\TB\monitor.sv
+F.\TB\scoreboard.sv
+F.\TB\agent.sv
+F.\TB\env.sv
+R8
+R21
+L0 1
+R9
+31
+R10
+R17
+R11
+!i113 0
+R12
+R13
+R14
+R1
+Xtestcase_pkg
+R2
+VAoJ=WNbTW?<]?[5kicgRR3
+r1
+!s85 0
+!i10b 1
+!s100 [9=kAcWlCUaO[QMX9Z5GW3
+IAoJ=WNbTW?<]?[5kicgRR3
+S1
+R7
+w1784484596
+8.\TB\testcase_pkg.sv
+R22
+L0 1
+R9
+31
+R10
+R17
+R11
+!i113 0
+R12
+R13
+R14
+R1
