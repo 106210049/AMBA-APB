@@ -1,81 +1,110 @@
-// Code your design here
-`include "APB_Master.v"
-`include "APB_Slave.v"
-module APB_Top(
-    input  wire        PCLK, PRESETn,
-    input  wire        TRANS, READ, WRITE,
-    input  wire [31:0] APB_WRITE_PADDR, APB_WRITE_DATA, APB_READ_PADDR,
-    output reg  [31:0] APB_READ_DATA_OUT,
-    output reg         PSLVERR
+`include "APB_Master.sv"
+`include "APB_Slave.sv"
+
+module APB_Top (
+    input  logic        PCLK,
+    input  logic        PRESETn,
+    input  logic        TRANS,
+    input  logic        READ,
+    input  logic        WRITE,
+  	input  logic [3:0]	APB_WRITE_STRB,
+    input  logic [31:0] APB_WRITE_PADDR,
+    input  logic [31:0] APB_WRITE_DATA,
+    input  logic [31:0] APB_READ_PADDR,
+
+    output logic [31:0] APB_READ_DATA_OUT,
+    output logic        PSLVERR
 );
-    // Wires từ master sang bus APB
-    wire        PENABLE, PWRITE;
-    wire [1:0]  PSELx;
-    wire [31:0] PADDR;
-    wire [31:0] PWDATA;
 
-    // Wires từ mỗi slave
-    wire [31:0] PRDATA1, PRDATA2;
-    wire        PREADY1, PREADY2;
-    wire        PSLVERR1, PSLVERR2;
+    //========================================
+    // Wires từ Master
+    //========================================
+    logic        PENABLE;
+    logic        PWRITE;
+    logic [1:0]  PSELx;
+    logic [31:0] PADDR;
+    logic [31:0] PWDATA;
+  	logic [3:0]  PSTRB;
+    //========================================
+    // Slave 0
+    //========================================
+    logic [31:0] PRDATA1;
+    logic        PREADY1;
+    logic        PSLVERR1;
 
-    // Wires bus trả về master (multiplex theo PSELx)
-    wire [31:0] PRDATA_bus;
-    wire        PREADY_bus;
-    wire        PSLVERR_bus;
+    //========================================
+    // Slave 1
+    //========================================
+    logic [31:0] PRDATA2;
+    logic        PREADY2;
+    logic        PSLVERR2;
 
-    // Wire cho dữ liệu đọc từ master (để gán ra output reg của top)
-    wire [31:0] master_read_data;
+    //========================================
+    // Bus response
+    //========================================
+    logic [31:0] PRDATA_bus;
+    logic        PREADY_bus;
+    logic        PSLVERR_bus;
 
-    // =========================
-    // Multiplex bus theo PSELx
-    // =========================
-    assign PRDATA_bus  = (PSELx[0]) ? PRDATA1 :
-                         (PSELx[1]) ? PRDATA2 : 32'b0;
+    //========================================
+    // Master read data
+    //========================================
+    logic [31:0] master_read_data;
 
-    assign PREADY_bus  = (PSELx[0]) ? PREADY1 :
-                         (PSELx[1]) ? PREADY2 : 1'b0;
+    //========================================
+    // APB Bus Multiplexer
+    //========================================
+    assign PRDATA_bus  = PSELx[0] ? PRDATA1 :
+                         PSELx[1] ? PRDATA2 :
+                         32'h0;
 
-    assign PSLVERR_bus = (PSELx[0]) ? PSLVERR1 :
-                         (PSELx[1]) ? PSLVERR2 : 1'b0;
+    assign PREADY_bus  = PSELx[0] ? PREADY1 :
+                         PSELx[1] ? PREADY2 :
+                         1'b0;
 
-    // =========================
-    // Instantiation: MASTER
-    // =========================
+    assign PSLVERR_bus = PSELx[0] ? PSLVERR1 :
+                         PSELx[1] ? PSLVERR2 :
+                         1'b0;
+
+    //========================================
+    // APB Master
+    //========================================
     APB_Master master_inst (
         .PCLK              (PCLK),
         .PRESETn           (PRESETn),
-        // điều khiển giao dịch
+
         .TRANS             (TRANS),
         .READ              (READ),
         .WRITE             (WRITE),
-        // địa chỉ & dữ liệu từ phía hệ thống
+      	.APB_WRITE_STRB	   (APB_WRITE_STRB),
         .APB_WRITE_PADDR   (APB_WRITE_PADDR),
         .APB_WRITE_DATA    (APB_WRITE_DATA),
         .APB_READ_PADDR    (APB_READ_PADDR),
-        // dữ liệu đọc trả ra (kết nối vào wire rồi gán ra output reg của top)
+
         .APB_READ_DATA_OUT (master_read_data),
-        // tín hiệu từ slave (đã multiplex)
+
         .PSLVERR           (PSLVERR_bus),
         .PREADY            (PREADY_bus),
         .PRDATA            (PRDATA_bus),
-        // tín hiệu APB sang slaves
+
         .PENABLE           (PENABLE),
         .PWRITE            (PWRITE),
         .PSELx             (PSELx),
+      	.PSTRB			   (PSTRB),
         .PADDR             (PADDR),
         .PWDATA            (PWDATA)
     );
 
-    // =========================
-    // Instantiation: SLAVE 0
-    // =========================
+    //========================================
+    // APB Slave 0
+    //========================================
     APB_Slave slave0_inst (
         .PCLK     (PCLK),
         .PRESETn  (PRESETn),
         .PENABLE  (PENABLE),
         .PWRITE   (PWRITE),
-        .PSELx    (PSELx[0]),   // bit 0 chọn slave 0
+        .PSELx    (PSELx[0]),
+      	.PSTRB	  (PSTRB),
         .PADDR    (PADDR),
         .PWDATA   (PWDATA),
         .PRDATA   (PRDATA1),
@@ -83,15 +112,16 @@ module APB_Top(
         .PSLVERR  (PSLVERR1)
     );
 
-    // =========================
-    // Instantiation: SLAVE 1
-    // =========================
+    //========================================
+    // APB Slave 1
+    //========================================
     APB_Slave slave1_inst (
         .PCLK     (PCLK),
         .PRESETn  (PRESETn),
         .PENABLE  (PENABLE),
         .PWRITE   (PWRITE),
-        .PSELx    (PSELx[1]),   // bit 1 chọn slave 1
+        .PSELx    (PSELx[1]),
+      	.PSTRB	  (PSTRB),
         .PADDR    (PADDR),
         .PWDATA   (PWDATA),
         .PRDATA   (PRDATA2),
@@ -99,18 +129,18 @@ module APB_Top(
         .PSLVERR  (PSLVERR2)
     );
 
-    // =========================
-    // Đưa dữ liệu ra cổng reg của TOP
-    // =========================
-    always @(*) begin
+    //========================================
+    // Top outputs
+    //========================================
+    always_comb begin
         APB_READ_DATA_OUT = master_read_data;
         PSLVERR           = PSLVERR_bus;
     end
 
-    // (Không bắt buộc) Cảnh báo khi cả hai slave đều được chọn cùng lúc.
-    // Chỉ dùng trong mô phỏng (non-synthesizable display).
-    // always @(*) begin
-    //     if (PSELx == 2'b11) $display("APB_Top WARN: Both slaves selected concurrently!");
+    // Simulation check
+    // always_comb begin
+    //     assert (PSELx != 2'b11)
+    //     else $error("APB_Top: Both slaves selected concurrently!");
     // end
 
 endmodule
