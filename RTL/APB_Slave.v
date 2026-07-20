@@ -4,6 +4,7 @@ module APB_Slave (
     input  logic        PENABLE,
     input  logic        PWRITE,
     input  logic        PSELx,
+    input  logic [3:0]  PSTRB,
     input  logic [31:0] PADDR,
     input  logic [31:0] PWDATA,
 
@@ -108,7 +109,10 @@ module APB_Slave (
                 memory[i] <= '0;
         end
         else if (write_en) begin
-            memory[addr_index] <= PWDATA;
+            if (PSTRB[0]) memory[addr_index][7:0]   <= PWDATA[7:0];
+            if (PSTRB[1]) memory[addr_index][15:8]  <= PWDATA[15:8];
+            if (PSTRB[2]) memory[addr_index][23:16] <= PWDATA[23:16];
+            if (PSTRB[3]) memory[addr_index][31:24] <= PWDATA[31:24];
         end
     end
 
