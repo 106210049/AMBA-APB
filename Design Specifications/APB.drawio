@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" pages="14">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" pages="15">
   <diagram name="APB Connection" id="jnjCFz4BIrWgyNoqFDZ2">
     <mxGraphModel dx="1061" dy="660" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -195,6 +195,38 @@
         </mxCell>
         <mxCell id="fT8M9ScFQOBePI6z_zcI-67" parent="arR4QTxy0-Nz9QsNSzK--1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="System bus slave interface" vertex="1">
           <mxGeometry height="40" width="120" x="10" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="DcCTSvqJkh2FwkL5f8Gn" name="Architecture">
+    <mxGraphModel dx="819" dy="442" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="VKbPpJekT_tr6Z7SUMsu-5" edge="1" parent="1" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="280" y="280" />
+            </Array>
+            <mxPoint x="280" y="160" as="sourcePoint" />
+            <mxPoint x="360" y="279.99999999999994" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VKbPpJekT_tr6Z7SUMsu-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="APB Master" vertex="1">
+          <mxGeometry height="160" width="80" x="120" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="VKbPpJekT_tr6Z7SUMsu-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Slave 1" vertex="1">
+          <mxGeometry height="80" width="80" x="360" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="VKbPpJekT_tr6Z7SUMsu-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Slave 2" vertex="1">
+          <mxGeometry height="80" width="80" x="360" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="VKbPpJekT_tr6Z7SUMsu-4" edge="1" parent="1" source="VKbPpJekT_tr6Z7SUMsu-1" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" target="VKbPpJekT_tr6Z7SUMsu-2" value="">
+          <mxGeometry height="100" relative="1" width="100" as="geometry">
+            <mxPoint x="250" y="250" as="sourcePoint" />
+            <mxPoint x="350" y="150" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
