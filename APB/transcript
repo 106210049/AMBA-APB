@@ -1,0 +1,75 @@
+# //  Questa Sim-64
+# //  Version 10.7c win64 Aug 18 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading project APB
+do run.do
+# C:/questasim64_10.7c/verilog_src/uvm-1.1d/src
+# ./wlf_out
+# ./cov_out
+# ./logs
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 23:38:00 on Aug 21,2026
+# vlog -reportprogress 300 -sv "+define+UVM_CMDLINE_NO_DPI" "+define+UVM_REGEX_NO_DPI" "+define+UVM_NO_DPI" "+incdir+C:/questasim64_10.7c/verilog_src/uvm-1.1d/src" C:/questasim64_10.7c/verilog_src/uvm-1.1d/src/uvm_pkg.sv 
+# -- Compiling package uvm_pkg (uvm-1.1d Built-in)
+# 
+# Top level modules:
+# 	--none--
+# End time: 23:38:01 on Aug 21,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 23:38:01 on Aug 21,2026
+# vlog -reportprogress 300 "+cover" -sv -svinputport=relaxed "+incdir+C:/questasim64_10.7c/verilog_src/uvm-1.1d/src" -f ./TB/tb/apb_run.f 
+# -- Compiling package apb_pkg
+# -- Importing package uvm_pkg (uvm-1.1d Built-in)
+# -- Compiling interface apb_if
+# -- Compiling module APB_Master
+# -- Compiling module APB_Slave
+# -- Compiling module APB_Top
+# -- Compiling module tb_apb_top
+# -- Importing package apb_pkg
+# -- Compiling program apb_checker
+# 
+# Top level modules:
+# 	tb_apb_top
+# End time: 23:38:01 on Aug 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+#     apb_master_slave_1_test
+#     apb_master_slave_2_test
+#     apb_master_random_test
+#     apb_master_wait_trans_test
+#     apb_master_error_response_test
+#     apb_master_5_random_test
+#     apb_master_full_strobes_test
+# 
+# vsim -c -coverage -wlf ./wlf_out/apb_master_slave_1_test.wlf work.tb_apb_top "+SVSEED=random" "+UVM_TESTNAME=apb_master_slave_1_test" "+UVM_VERBOSITY=UVM_FULL" "+UVM_TR_RECORD" -onfinish final -do "transcript file ./logs/apb_master_slave_1_test.log; log -r /*; run -all; coverage save -onexit ./cov_out/apb_master_slave_1_test.ucdb; quit -sim;" -debugDB 
+# Start time: 23:38:01 on Aug 21,2026
+# ** Warning: (vsim-4308) Enabling visibility using +acc is recommended with debug flow.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vsim-8611) Generating debug db.
+# ** Warning: (vopt-4308) Enabling visibility using +acc is recommended with debug flow.
+# Loading sv_std.std
+# Loading work.apb_if(fast)
+# Loading work.uvm_pkg(fast)
+# Loading work.apb_pkg(fast)
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Loading work.tb_apb_top(fast)
+# Loading work.apb_if(fast)
+# Loading work.APB_Top(fast)
+# Loading work.APB_Master(fast)
+# Loading work.APB_Slave(fast)
+# ** Note: (vsim-8900) Creating design debug database vsim.dbg.
+# transcript file ./logs/apb_master_slave_1_test.log

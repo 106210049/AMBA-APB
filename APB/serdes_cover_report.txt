@@ -1,0 +1,56 @@
+COVERGROUP COVERAGE:
+-----------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal    Status               
+                                                                                              
+-----------------------------------------------------------------------------------------------
+ TYPE /apb_pkg/func_cov/cov_slv_apb                   100.00%        100    Covered              
+    covered/total bins:                                     6          6                      
+    missing/total bins:                                     0          6                      
+    % Hit:                                            100.00%        100                      
+    Coverpoint cov_slv_apb::cp_paddr                  100.00%        100    Covered              
+        covered/total bins:                                 2          2                      
+        missing/total bins:                                 0          2                      
+        % Hit:                                        100.00%        100                      
+        bin valid_addr                                     18          1    Covered              
+        bin invalid_addr                                   14          1    Covered              
+    Coverpoint cov_slv_apb::cp_paddr_low2             100.00%        100    Covered              
+        covered/total bins:                                 1          1                      
+        missing/total bins:                                 0          1                      
+        % Hit:                                        100.00%        100                      
+        bin waiting_addr                                    4          1    Covered              
+    Coverpoint cov_slv_apb::cp_pselx                  100.00%        100    Covered              
+        covered/total bins:                                 2          2                      
+        missing/total bins:                                 0          2                      
+        % Hit:                                        100.00%        100                      
+        bin slave_1                                         8          1    Covered              
+        bin slave_2                                        12          1    Covered              
+    Cross cov_slv_apb::#cross__0#                     100.00%        100    Covered              
+        covered/total bins:                                 1          1                      
+        missing/total bins:                                 0          1                      
+        % Hit:                                        100.00%        100                      
+        bin <invalid_addr,slave_2>                          6          1    Covered              
+        ignore_bin invalid_addr_slv1                       12               Occurred             
+        ignore_bin invalid_addr_slv2                        8               Occurred             
+ TYPE /apb_pkg/func_cov/cov_pwrite                    100.00%        100    Covered              
+    covered/total bins:                                     2          2                      
+    missing/total bins:                                     0          2                      
+    % Hit:                                            100.00%        100                      
+    Coverpoint cov_pwrite::cp_pwrite                  100.00%        100    Covered              
+        covered/total bins:                                 2          2                      
+        missing/total bins:                                 0          2                      
+        % Hit:                                        100.00%        100                      
+        bin write                                          10          1    Covered              
+        bin read                                           10          1    Covered              
+ TYPE /apb_pkg/func_cov/cov_strobes                    66.66%        100    Uncovered            
+    covered/total bins:                                     2          3                      
+    missing/total bins:                                     1          3                      
+    % Hit:                                             66.66%        100                      
+    Coverpoint cov_strobes::cp_pstrb                   66.66%        100    Uncovered            
+        covered/total bins:                                 2          3                      
+        missing/total bins:                                 1          3                      
+        % Hit:                                         66.66%        100                      
+        bin be_none                                        11          1    Covered              
+        bin be_byte0                                        9          1    Covered              
+        bin be_full                                         0          1    ZERO                 
+
+TOTAL COVERGROUP COVERAGE: 88.88%  COVERGROUP TYPES: 3

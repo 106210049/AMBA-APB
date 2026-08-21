@@ -1,0 +1,270 @@
+#  log -r /*
+#  run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO C:/questasim64_10.7c/verilog_src/uvm-1.1d/src/base/uvm_root.svh(370) @ 0: reporter [NO_DPI_TSTNAME] UVM_NO_DPI defined--getting UVM_TESTNAME directly, without DPI
+# UVM_INFO @ 0: reporter [RNTST] Running test apb_master_wait_trans_test...
+# UVM_INFO .\TB\tb\apb_test_lib.sv(22) @ 0: uvm_test_top [apb_master_wait_trans_test] Build Phase of Test is being executed!
+# UVM_INFO .\TB\tb\apb_tb.sv(21) @ 0: uvm_test_top.tb [apb_tb] Testbench Build Phase is being executed !
+# UVM_INFO .\TB\sv\apb_master_agent.sv(22) @ 0: uvm_test_top.tb.master_env.agent [CFG] Property is_active exists in config DB
+# UVM_INFO .\TB\sv\apb_master_agent.sv(33) @ 0: uvm_test_top.tb.master_env.agent [apb_master_agent] AGENT IS ACTIVE !
+# UVM_INFO .\TB\sv\apb_slave_agent.sv(22) @ 0: uvm_test_top.tb.slave_env.agent [CFG] Property is_active exists in config DB
+# UVM_INFO .\TB\sv\apb_master_driver.sv(24) @ 0: uvm_test_top.tb.master_env.agent.driver [apb_master_driver] Driver is connected with interface
+# UVM_INFO .\TB\tb\apb_tb.sv(28) @ 0: uvm_test_top.tb [apb_tb] Testbench Connect Phase is being executed !
+# UVM_INFO .\TB\tb\apb_test_lib.sv(28) @ 0: uvm_test_top [apb_master_wait_trans_test] End of Elaboration Phase of Test is being executed!
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# ----------------------------------------------------------------------
+# Name                           Type                        Size  Value
+# ----------------------------------------------------------------------
+# uvm_test_top                   apb_master_wait_trans_test  -     @452 
+#   tb                           apb_tb                      -     @471 
+#     apb_scb                    apb_scoreboard              -     @492 
+#       master_imp               uvm_analysis_imp_master     -     @499 
+#         recording_detail       integral                    32    'd1  
+#       slave_imp                uvm_analysis_imp_slave      -     @507 
+#         recording_detail       integral                    32    'd1  
+#       recording_detail         integral                    32    'd1  
+#     master_env                 apb_master_env              -     @478 
+#       agent                    apb_master_agent            -     @515 
+#         driver                 apb_master_driver           -     @540 
+#           rsp_port             uvm_analysis_port           -     @555 
+#             recording_detail   integral                    32    'd1  
+#           seq_item_port        uvm_seq_item_pull_port      -     @547 
+#             recording_detail   integral                    32    'd1  
+#           recording_detail     integral                    32    'd1  
+#         monitor                apb_master_monitor          -     @523 
+#           item_collected_port  uvm_analysis_port           -     @530 
+#             recording_detail   integral                    32    'd1  
+#           recording_detail     integral                    32    'd1  
+#         sequencer              apb_master_sequencer        -     @563 
+#           rsp_export           uvm_analysis_export         -     @570 
+#             recording_detail   integral                    32    'd1  
+#           seq_item_export      uvm_seq_item_pull_imp       -     @664 
+#             recording_detail   integral                    32    'd1  
+#           recording_detail     integral                    32    'd1  
+#           arbitration_queue    array                       0     -    
+#           lock_queue           array                       0     -    
+#           num_last_reqs        integral                    32    'd1  
+#           num_last_rsps        integral                    32    'd1  
+#         recording_detail       integral                    32    'd1  
+#       recording_detail         integral                    32    'd1  
+#     slave_env                  apb_slave_env               -     @485 
+#       agent                    apb_slave_agent             -     @677 
+#         monitor                apb_slave_monitor           -     @700 
+#           item_collected_port  uvm_analysis_port           -     @707 
+#             recording_detail   integral                    32    'd1  
+#           recording_detail     integral                    32    'd1  
+#         recording_detail       integral                    32    'd1  
+#       fc                       func_cov                    -     @684 
+#         analysis_imp           uvm_analysis_imp            -     @691 
+#           recording_detail     integral                    32    'd1  
+#         recording_detail       integral                    32    'd1  
+#       recording_detail         integral                    32    'd1  
+#     recording_detail           integral                    32    'd1  
+# ----------------------------------------------------------------------
+# 
+# UVM_INFO .\TB\sv\apb_master_driver.sv(28) @ 0: uvm_test_top.tb.master_env.agent.driver [apb_master_driver] start of simulation for uvm_test_top.tb.master_env.agent.driver
+# UVM_INFO .\TB\sv\apb_master_monitor.sv(26) @ 0: uvm_test_top.tb.master_env.agent.monitor [apb_master_monitor] start of simulation for uvm_test_top.tb.master_env.agent.monitor
+# UVM_INFO .\TB\sv\apb_master_agent.sv(46) @ 0: uvm_test_top.tb.master_env.agent [apb_master_agent] start of simulation for uvm_test_top.tb.master_env.agent
+# UVM_INFO .\TB\sv\apb_master_env.sv(22) @ 0: uvm_test_top.tb.master_env [apb_master_env] start of simulation for uvm_test_top.tb.master_env
+# UVM_INFO .\TB\sv\apb_slave_monitor.sv(25) @ 0: uvm_test_top.tb.slave_env.agent.monitor [apb_slave_monitor] start of simulation for uvm_test_top.tb.slave_env.agent.monitor
+# UVM_INFO .\TB\sv\apb_slave_agent.sv(47) @ 0: uvm_test_top.tb.slave_env.agent [apb_slave_agent] start of simulation for uvm_test_top.tb.slave_env.agent
+# UVM_INFO .\TB\sv\apb_slave_env.sv(27) @ 0: uvm_test_top.tb.slave_env [apb_slave_env] start of simulation for uvm_test_top.tb.slave_env
+# UVM_INFO .\TB\tb\apb_tb.sv(32) @ 0: uvm_test_top.tb [apb_tb] start of simulation for uvm_test_top.tb
+# UVM_INFO .\TB\tb\apb_test_lib.sv(37) @ 0: uvm_test_top [apb_master_wait_trans_test] Run Phase of Test is being executed!
+# UVM_INFO .\TB\tb\apb_test_lib.sv(40) @ 0: uvm_test_top [apb_master_wait_trans_test] Raise objection in run phase
+# UVM_INFO .\TB\tb\apb_test_lib.sv(42) @ 0: uvm_test_top [apb_master_wait_trans_test] Drop objection in run phase
+# UVM_INFO .\TB\tb\apb_tb.sv(36) @ 0: uvm_test_top.tb [apb_tb] Testbench Run Phase is begin executed!
+# UVM_INFO C:/questasim64_10.7c/verilog_src/uvm-1.1d/src/seq/uvm_sequencer_base.svh(1390) @ 0: uvm_test_top.tb.master_env.agent.sequencer [PHASESEQ] Starting default sequence 'apb_master_wait_trans_sequences' for phase 'run'
+# UVM_INFO .\TB\sv\apb_master_driver.sv(32) @ 0: uvm_test_top.tb.master_env.agent.driver [apb_master_driver] Driver is running
+# UVM_INFO .\TB\sv\apb_master_sequences.sv(22) @ 0: uvm_test_top.tb.master_env.agent.sequencer@@apb_master_wait_trans_sequences [apb_master_wait_trans_sequences] raise objection
+# UVM_INFO .\TB\sv\apb_master_sequences.sv(90) @ 0: uvm_test_top.tb.master_env.agent.sequencer@@apb_master_wait_trans_sequences [apb_master_wait_trans_sequences] Executing apb_master_wait_trans_sequences
+# UVM_INFO C:/questasim64_10.7c/verilog_src/uvm-1.1d/src/seq/uvm_sequencer_base.svh(1384) @ 0: uvm_test_top.tb.master_env.agent.sequencer [PHASESEQ] No default phase sequence for phase 'pre_reset'
+# UVM_INFO C:/questasim64_10.7c/verilog_src/uvm-1.1d/src/seq/uvm_sequencer_base.svh(1384) @ 0: uvm_test_top.tb.master_env.agent.sequencer [PHASESEQ] No default phase sequence for phase 'reset'
+# UVM_INFO C:/questasim64_10.7c/verilog_src/uvm-1.1d/src/seq/uvm_sequencer_base.svh(1384) @ 0: uvm_test_top.tb.master_env.agent.sequencer [PHASESEQ] No default phase sequence for phase 'post_reset'
+# UVM_INFO C:/questasim64_10.7c/verilog_src/uvm-1.1d/src/seq/uvm_sequencer_base.svh(1384) @ 0: uvm_test_top.tb.master_env.agent.sequencer [PHASESEQ] No default phase sequence for phase 'pre_configure'
+# UVM_INFO C:/questasim64_10.7c/verilog_src/uvm-1.1d/src/seq/uvm_sequencer_base.svh(1384) @ 0: uvm_test_top.tb.master_env.agent.sequencer [PHASESEQ] No default phase sequence for phase 'configure'
+# UVM_INFO C:/questasim64_10.7c/verilog_src/uvm-1.1d/src/seq/uvm_sequencer_base.svh(1384) @ 0: uvm_test_top.tb.master_env.agent.sequencer [PHASESEQ] No default phase sequence for phase 'post_configure'
+# UVM_INFO C:/questasim64_10.7c/verilog_src/uvm-1.1d/src/seq/uvm_sequencer_base.svh(1384) @ 0: uvm_test_top.tb.master_env.agent.sequencer [PHASESEQ] No default phase sequence for phase 'pre_main'
+# UVM_INFO C:/questasim64_10.7c/verilog_src/uvm-1.1d/src/seq/uvm_sequencer_base.svh(1384) @ 0: uvm_test_top.tb.master_env.agent.sequencer [PHASESEQ] No default phase sequence for phase 'main'
+# UVM_INFO C:/questasim64_10.7c/verilog_src/uvm-1.1d/src/seq/uvm_sequencer_base.svh(1384) @ 0: uvm_test_top.tb.master_env.agent.sequencer [PHASESEQ] No default phase sequence for phase 'post_main'
+# UVM_INFO C:/questasim64_10.7c/verilog_src/uvm-1.1d/src/seq/uvm_sequencer_base.svh(1384) @ 0: uvm_test_top.tb.master_env.agent.sequencer [PHASESEQ] No default phase sequence for phase 'pre_shutdown'
+# UVM_INFO C:/questasim64_10.7c/verilog_src/uvm-1.1d/src/seq/uvm_sequencer_base.svh(1384) @ 0: uvm_test_top.tb.master_env.agent.sequencer [PHASESEQ] No default phase sequence for phase 'shutdown'
+# UVM_INFO C:/questasim64_10.7c/verilog_src/uvm-1.1d/src/seq/uvm_sequencer_base.svh(1384) @ 0: uvm_test_top.tb.master_env.agent.sequencer [PHASESEQ] No default phase sequence for phase 'post_shutdown'
+# UVM_INFO .\TB\sv\apb_slave_monitor.sv(32) @ 25: uvm_test_top.tb.slave_env.agent.monitor [apb_slave_monitor] Detected Reset Done
+# UVM_INFO .\TB\sv\apb_master_monitor.sv(33) @ 25: uvm_test_top.tb.master_env.agent.monitor [apb_master_monitor] Detected Reset Done
+# UVM_INFO .\TB\sv\apb_master_driver.sv(37) @ 25: uvm_test_top.tb.master_env.agent.driver [apb_master_driver] Reset dropped
+# UVM_INFO .\TB\sv\apb_master_driver.sv(52) @ 25: uvm_test_top.tb.master_env.agent.driver [apb_master_driver] Sending Packet :
+# ------------------------------------------------------------------------------------------------------------------------------------
+# Name                           Type                 Size  Value                                                                     
+# ------------------------------------------------------------------------------------------------------------------------------------
+# req                            apb_master_seq_item  -     @727                                                                      
+#   READ                         integral             1     'h0X                                                                      
+#   WRITE                        integral             1     'h0X                                                                      
+#   APB_WRITE_STRB               integral             4     'b1110                                                                    
+#   APB_WRITE_PADDR              integral             32    'h8000013f                                                                
+#   APB_WRITE_DATA               integral             32    'hffffffff                                                                
+#   APB_READ_PADDR               integral             32    'h8000013f                                                                
+#   APB_READ_DATA_OUT            integral             32    'h0xxxxxxxx                                                               
+#   begin_time                   time                 64    25                                                                        
+#   depth                        int                  32    'd2                                                                       
+#   parent sequence (name)       string               31    apb_master_wait_trans_sequences                                           
+#   parent sequence (full name)  string               74    uvm_test_top.tb.master_env.agent.sequencer.apb_master_wait_trans_sequences
+#   sequencer                    string               42    uvm_test_top.tb.master_env.agent.sequencer                                
+# ------------------------------------------------------------------------------------------------------------------------------------
+# 
+# [95][SLAVE-CONNECTOR][WRITE] ADDR=0x8000013f SELx=10 DATA_WRITE=0xffffffff
+# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(85) @ 105: uvm_test_top.tb.apb_scb [apb_scoreboard] [SB-SLAVE] Queued packet: PWRITE=1 ADDR=0x8000013f DATA=0xffffffff PRDATA=0x0
+# UVM_INFO .\TB\sv\apb_slave_monitor.sv(52) @ 105: uvm_test_top.tb.slave_env.agent.monitor [apb_slave_monitor] Packet Collected :
+# ---------------------------------------------------
+# Name           Type                Size  Value     
+# ---------------------------------------------------
+# apb_slave_pkt  apb_slave_seq_item  -     @755      
+#   PSLVERR      integral            1     'h0X      
+#   PREADY       integral            1     'h0X      
+#   PRDATA       integral            32    'h0       
+#   PENABLE      integral            1     'h0X      
+#   PWRITE       integral            1     'h1       
+#   PSELx        integral            2     'b10      
+#   PSTRB        integral            4     'b1110    
+#   PADDR        integral            32    'h8000013f
+#   PWDATA       integral            32    'hffffffff
+#   begin_time   time                64    95        
+#   end_time     time                64    105       
+# ---------------------------------------------------
+# 
+# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(65) @ 105: uvm_test_top.tb.apb_scb [apb_scoreboard] [SB-MASTER-WRITE] ADDR=0x8000013f DATA=0xffffffff STRB=1110 NEW_VAL=0xffffff00
+# UVM_INFO .\TB\sv\apb_master_monitor.sv(55) @ 105: uvm_test_top.tb.master_env.agent.monitor [apb_master_monitor] Packet Collected :
+# ----------------------------------------------------------
+# Name                 Type                 Size  Value     
+# ----------------------------------------------------------
+# apb_master_pkt       apb_master_seq_item  -     @759      
+#   READ               integral             1     'h0       
+#   WRITE              integral             1     'h1       
+#   APB_WRITE_STRB     integral             4     'b1110    
+#   APB_WRITE_PADDR    integral             32    'h8000013f
+#   APB_WRITE_DATA     integral             32    'hffffffff
+#   APB_READ_PADDR     integral             32    'h0       
+#   APB_READ_DATA_OUT  integral             32    'h0       
+#   begin_time         time                 64    95        
+#   end_time           time                 64    105       
+# ----------------------------------------------------------
+# 
+# UVM_INFO .\TB\sv\apb_master_driver.sv(57) @ 165: uvm_test_top.tb.master_env.agent.driver [apb_master_driver] Read Data: ffffff00
+# [165][SLAVE-CONNECTOR][READ] ADDR=0x8000013f SELx=10 DATA_OUT=0xffffff00
+# UVM_INFO .\TB\sv\apb_master_sequences.sv(36) @ 165: uvm_test_top.tb.master_env.agent.sequencer@@apb_master_wait_trans_sequences [apb_master_wait_trans_sequences] drop objection
+# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(85) @ 175: uvm_test_top.tb.apb_scb [apb_scoreboard] [SB-SLAVE] Queued packet: PWRITE=0 ADDR=0x8000013f DATA=0x0 PRDATA=0xffffff00
+# UVM_INFO .\TB\sv\apb_slave_monitor.sv(52) @ 175: uvm_test_top.tb.slave_env.agent.monitor [apb_slave_monitor] Packet Collected :
+# ---------------------------------------------------
+# Name           Type                Size  Value     
+# ---------------------------------------------------
+# apb_slave_pkt  apb_slave_seq_item  -     @771      
+#   PSLVERR      integral            1     'h0X      
+#   PREADY       integral            1     'h0X      
+#   PRDATA       integral            32    'hffffff00
+#   PENABLE      integral            1     'h0X      
+#   PWRITE       integral            1     'h0       
+#   PSELx        integral            2     'b10      
+#   PSTRB        integral            4     'b0       
+#   PADDR        integral            32    'h8000013f
+#   PWDATA       integral            32    'h0       
+#   begin_time   time                64    165       
+#   end_time     time                64    175       
+# ---------------------------------------------------
+# 
+# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(73) @ 175: uvm_test_top.tb.apb_scb [apb_scoreboard] [SB-MASTER-READ] ADDR=0x8000013f
+# UVM_INFO .\TB\sv\apb_master_monitor.sv(55) @ 175: uvm_test_top.tb.master_env.agent.monitor [apb_master_monitor] Packet Collected :
+# ----------------------------------------------------------
+# Name                 Type                 Size  Value     
+# ----------------------------------------------------------
+# apb_master_pkt       apb_master_seq_item  -     @780      
+#   READ               integral             1     'h1       
+#   WRITE              integral             1     'h0       
+#   APB_WRITE_STRB     integral             4     'b0       
+#   APB_WRITE_PADDR    integral             32    'h8000013f
+#   APB_WRITE_DATA     integral             32    'hffffffff
+#   APB_READ_PADDR     integral             32    'h8000013f
+#   APB_READ_DATA_OUT  integral             32    'hffffff00
+#   begin_time         time                 64    165       
+#   end_time           time                 64    175       
+# ----------------------------------------------------------
+# 
+# UVM_INFO C:/questasim64_10.7c/verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1243) @ 365: reporter [TEST_DONE] All end-of-test objections have been dropped. Calling stop tasks
+# UVM_INFO C:/questasim64_10.7c/verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 365: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(101) @ 365: uvm_test_top.tb.apb_scb [apb_scoreboard] WRITE PASS EXP ADDR=0x8000013f DATA=0xffffffff, ACT ADDR=0x8000013f DATA=0xffffffff
+# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(123) @ 365: uvm_test_top.tb.apb_scb [apb_scoreboard] READ PASS ADDR=0x8000013f EXP=0xffffff00 ACT=0xffffff00
+# UVM_INFO .\TB\tb\apb_test_lib.sv(46) @ 365: uvm_test_top [apb_master_wait_trans_test] Check config usage at check phase
+# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(139) @ 365: uvm_test_top.tb.apb_scb [apb_scoreboard] Scoreboard Summary: Total=2 WR=1 RD=1 ERR=0
+# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(144) @ 365: uvm_test_top.tb.apb_scb [apb_scoreboard] Simulation PASSED ✅
+# UVM_INFO .\TB\sv\apb_master_monitor.sv(61) @ 365: uvm_test_top.tb.master_env.agent.monitor [apb_master_monitor] Report: APB Master Monitor observed 2 transactions
+# UVM_INFO .\TB\sv\apb_slave_monitor.sv(58) @ 365: uvm_test_top.tb.slave_env.agent.monitor [apb_slave_monitor] Report: APB Slave Monitor observed 2 transactions
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   62
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [CFG]     2
+# [NO_DPI_TSTNAME]     1
+# [PHASESEQ]    13
+# [RNTST]     1
+# [TEST_DONE]     2
+# [UVMTOP]     1
+# [apb_master_agent]     2
+# [apb_master_driver]     6
+# [apb_master_env]     1
+# [apb_master_monitor]     5
+# [apb_master_wait_trans_sequences]     3
+# [apb_master_wait_trans_test]     6
+# [apb_scoreboard]     8
+# [apb_slave_agent]     1
+# [apb_slave_env]     1
+# [apb_slave_monitor]     5
+# [apb_tb]     4
+# ** Note: $finish    : C:/questasim64_10.7c/verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 365 ns  Iteration: 53  Instance: /tb_apb_top
+# Break in Task std/mailbox::get at C:/questasim64_10.7c/win64/../verilog_src/std/std.sv line 41
+#  coverage save -onexit ./cov_out/apb_master_wait_trans_test.ucdb
+#  quit -sim
+# Saving coverage database on exit...
+# End time: 23:38:28 on Aug 21,2026, Elapsed time: 0:00:06
+# Errors: 0, Warnings: 0
+# 
+# vsim -c -coverage -wlf ./wlf_out/apb_master_error_response_test.wlf work.tb_apb_top "+SVSEED=random" "+UVM_TESTNAME=apb_master_error_response_test" "+UVM_VERBOSITY=UVM_FULL" "+UVM_TR_RECORD" -onfinish final -do "transcript file ./logs/apb_master_error_response_test.log; log -r /*; run -all; coverage save -onexit ./cov_out/apb_master_error_response_test.ucdb; quit -sim;" -debugDB 
+# Start time: 23:38:28 on Aug 21,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.apb_if(fast)
+# Loading work.uvm_pkg(fast)
+# Loading work.apb_pkg(fast)
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Loading work.tb_apb_top(fast)
+# Loading work.apb_if(fast)
+# Loading work.APB_Top(fast)
+# Loading work.APB_Master(fast)
+# Loading work.APB_Slave(fast)
+# ** Note: (vsim-8716) Reusing existing debug database vsim.dbg.
+# transcript file ./logs/apb_master_error_response_test.log
