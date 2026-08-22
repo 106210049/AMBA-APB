@@ -248,11 +248,11 @@
 #  coverage save -onexit ./cov_out/apb_master_random_test.ucdb
 #  quit -sim
 # Saving coverage database on exit...
-# End time: 23:38:22 on Aug 21,2026, Elapsed time: 0:00:06
+# End time: 11:54:58 on Aug 22,2026, Elapsed time: 0:00:06
 # Errors: 0, Warnings: 0
 # 
 # vsim -c -coverage -wlf ./wlf_out/apb_master_wait_trans_test.wlf work.tb_apb_top "+SVSEED=random" "+UVM_TESTNAME=apb_master_wait_trans_test" "+UVM_VERBOSITY=UVM_FULL" "+UVM_TR_RECORD" -onfinish final -do "transcript file ./logs/apb_master_wait_trans_test.log; log -r /*; run -all; coverage save -onexit ./cov_out/apb_master_wait_trans_test.ucdb; quit -sim;" -debugDB 
-# Start time: 23:38:22 on Aug 21,2026
+# Start time: 11:54:58 on Aug 22,2026
 # ** Note: (vsim-8009) Loading existing optimized design _opt
 # Loading sv_std.std
 # Loading work.apb_if(fast)

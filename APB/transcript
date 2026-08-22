@@ -19,19 +19,22 @@ do run.do
 # ./cov_out
 # ./logs
 # QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
-# Start time: 23:38:00 on Aug 21,2026
+# Start time: 11:54:38 on Aug 22,2026
 # vlog -reportprogress 300 -sv "+define+UVM_CMDLINE_NO_DPI" "+define+UVM_REGEX_NO_DPI" "+define+UVM_NO_DPI" "+incdir+C:/questasim64_10.7c/verilog_src/uvm-1.1d/src" C:/questasim64_10.7c/verilog_src/uvm-1.1d/src/uvm_pkg.sv 
 # -- Compiling package uvm_pkg (uvm-1.1d Built-in)
 # 
 # Top level modules:
 # 	--none--
-# End time: 23:38:01 on Aug 21,2026, Elapsed time: 0:00:01
+# End time: 11:54:38 on Aug 22,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
-# Start time: 23:38:01 on Aug 21,2026
+# Start time: 11:54:38 on Aug 22,2026
 # vlog -reportprogress 300 "+cover" -sv -svinputport=relaxed "+incdir+C:/questasim64_10.7c/verilog_src/uvm-1.1d/src" -f ./TB/tb/apb_run.f 
 # -- Compiling package apb_pkg
 # -- Importing package uvm_pkg (uvm-1.1d Built-in)
+# ** Warning: ** while parsing file included at ./TB/sv/apb_pkg.sv(8)
+# ** while parsing macro expansion: 'uvm_do_with' starting at .\TB\sv\apb_master_sequences.sv(120)
+# ** at .\TB\sv\apb_master_sequences.sv(120): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
 # -- Compiling interface apb_if
 # -- Compiling module APB_Master
 # -- Compiling module APB_Slave
@@ -42,8 +45,8 @@ do run.do
 # 
 # Top level modules:
 # 	tb_apb_top
-# End time: 23:38:01 on Aug 21,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
+# End time: 11:54:38 on Aug 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
 # 
 #     apb_master_slave_1_test
 #     apb_master_slave_2_test
@@ -52,9 +55,11 @@ do run.do
 #     apb_master_error_response_test
 #     apb_master_5_random_test
 #     apb_master_full_strobes_test
+#     apb_master_zero_stobes_test
+#     apb_master_sequence_trans_test
 # 
 # vsim -c -coverage -wlf ./wlf_out/apb_master_slave_1_test.wlf work.tb_apb_top "+SVSEED=random" "+UVM_TESTNAME=apb_master_slave_1_test" "+UVM_VERBOSITY=UVM_FULL" "+UVM_TR_RECORD" -onfinish final -do "transcript file ./logs/apb_master_slave_1_test.log; log -r /*; run -all; coverage save -onexit ./cov_out/apb_master_slave_1_test.ucdb; quit -sim;" -debugDB 
-# Start time: 23:38:01 on Aug 21,2026
+# Start time: 11:54:38 on Aug 22,2026
 # ** Warning: (vsim-4308) Enabling visibility using +acc is recommended with debug flow.
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # ** Note: (vsim-8611) Generating debug db.

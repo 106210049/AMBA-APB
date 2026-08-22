@@ -120,9 +120,9 @@
 #   READ                         integral             1     'h0X                                                                    
 #   WRITE                        integral             1     'h0X                                                                    
 #   APB_WRITE_STRB               integral             4     'b10                                                                    
-#   APB_WRITE_PADDR              integral             32    'h80000303                                                              
+#   APB_WRITE_PADDR              integral             32    'h80000001                                                              
 #   APB_WRITE_DATA               integral             32    'h55555555                                                              
-#   APB_READ_PADDR               integral             32    'h80000303                                                              
+#   APB_READ_PADDR               integral             32    'h80000001                                                              
 #   APB_READ_DATA_OUT            integral             32    'h0xxxxxxxx                                                             
 #   begin_time                   time                 64    25                                                                      
 #   depth                        int                  32    'd2                                                                     
@@ -131,9 +131,9 @@
 #   sequencer                    string               42    uvm_test_top.tb.master_env.agent.sequencer                              
 # ----------------------------------------------------------------------------------------------------------------------------------
 # 
-# [95][SLAVE-CONNECTOR][WRITE] ADDR=0x80000303 SELx=10 DATA_WRITE=0x55555555
-# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(85) @ 105: uvm_test_top.tb.apb_scb [apb_scoreboard] [SB-SLAVE] Queued packet: PWRITE=1 ADDR=0x80000303 DATA=0x55555555 PRDATA=0x0
-# UVM_INFO .\TB\sv\apb_slave_monitor.sv(52) @ 105: uvm_test_top.tb.slave_env.agent.monitor [apb_slave_monitor] Packet Collected :
+# [75][SLAVE-CONNECTOR][WRITE] ADDR=0x80000001 SELx=10 DATA_WRITE=0x55555555
+# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(85) @ 85: uvm_test_top.tb.apb_scb [apb_scoreboard] [SB-SLAVE] Queued packet: PWRITE=1 ADDR=0x80000001 DATA=0x55555555 PRDATA=0x0
+# UVM_INFO .\TB\sv\apb_slave_monitor.sv(52) @ 85: uvm_test_top.tb.slave_env.agent.monitor [apb_slave_monitor] Packet Collected :
 # ---------------------------------------------------
 # Name           Type                Size  Value     
 # ---------------------------------------------------
@@ -145,14 +145,14 @@
 #   PWRITE       integral            1     'h1       
 #   PSELx        integral            2     'b10      
 #   PSTRB        integral            4     'b10      
-#   PADDR        integral            32    'h80000303
+#   PADDR        integral            32    'h80000001
 #   PWDATA       integral            32    'h55555555
-#   begin_time   time                64    95        
-#   end_time     time                64    105       
+#   begin_time   time                64    75        
+#   end_time     time                64    85        
 # ---------------------------------------------------
 # 
-# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(65) @ 105: uvm_test_top.tb.apb_scb [apb_scoreboard] [SB-MASTER-WRITE] ADDR=0x80000303 DATA=0x55555555 STRB=0010 NEW_VAL=0x5500
-# UVM_INFO .\TB\sv\apb_master_monitor.sv(55) @ 105: uvm_test_top.tb.master_env.agent.monitor [apb_master_monitor] Packet Collected :
+# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(65) @ 85: uvm_test_top.tb.apb_scb [apb_scoreboard] [SB-MASTER-WRITE] ADDR=0x80000001 DATA=0x55555555 STRB=0010 NEW_VAL=0x5500
+# UVM_INFO .\TB\sv\apb_master_monitor.sv(55) @ 85: uvm_test_top.tb.master_env.agent.monitor [apb_master_monitor] Packet Collected :
 # ----------------------------------------------------------
 # Name                 Type                 Size  Value     
 # ----------------------------------------------------------
@@ -160,17 +160,17 @@
 #   READ               integral             1     'h0       
 #   WRITE              integral             1     'h1       
 #   APB_WRITE_STRB     integral             4     'b10      
-#   APB_WRITE_PADDR    integral             32    'h80000303
+#   APB_WRITE_PADDR    integral             32    'h80000001
 #   APB_WRITE_DATA     integral             32    'h55555555
 #   APB_READ_PADDR     integral             32    'h0       
 #   APB_READ_DATA_OUT  integral             32    'h0       
-#   begin_time         time                 64    95        
-#   end_time           time                 64    105       
+#   begin_time         time                 64    75        
+#   end_time           time                 64    85        
 # ----------------------------------------------------------
 # 
-# UVM_INFO .\TB\sv\apb_master_driver.sv(57) @ 165: uvm_test_top.tb.master_env.agent.driver [apb_master_driver] Read Data: 5500
-# [165][SLAVE-CONNECTOR][READ] ADDR=0x80000303 SELx=10 DATA_OUT=0x5500
-# UVM_INFO .\TB\sv\apb_master_driver.sv(52) @ 165: uvm_test_top.tb.master_env.agent.driver [apb_master_driver] Sending Packet :
+# UVM_INFO .\TB\sv\apb_master_driver.sv(57) @ 125: uvm_test_top.tb.master_env.agent.driver [apb_master_driver] Read Data: 5500
+# [125][SLAVE-CONNECTOR][READ] ADDR=0x80000001 SELx=10 DATA_OUT=0x5500
+# UVM_INFO .\TB\sv\apb_master_driver.sv(52) @ 125: uvm_test_top.tb.master_env.agent.driver [apb_master_driver] Sending Packet :
 # ----------------------------------------------------------------------------------------------------------------------------------
 # Name                           Type                 Size  Value                                                                   
 # ----------------------------------------------------------------------------------------------------------------------------------
@@ -178,19 +178,19 @@
 #   READ                         integral             1     'h0X                                                                    
 #   WRITE                        integral             1     'h0X                                                                    
 #   APB_WRITE_STRB               integral             4     'b1001                                                                  
-#   APB_WRITE_PADDR              integral             32    'h800000e4                                                              
+#   APB_WRITE_PADDR              integral             32    'h4                                                                     
 #   APB_WRITE_DATA               integral             32    'hffffffff                                                              
-#   APB_READ_PADDR               integral             32    'h800000e4                                                              
+#   APB_READ_PADDR               integral             32    'h4                                                                     
 #   APB_READ_DATA_OUT            integral             32    'h0xxxxxxxx                                                             
-#   begin_time                   time                 64    165                                                                     
+#   begin_time                   time                 64    125                                                                     
 #   depth                        int                  32    'd2                                                                     
 #   parent sequence (name)       string               29    apb_master_5_random_sequences                                           
 #   parent sequence (full name)  string               72    uvm_test_top.tb.master_env.agent.sequencer.apb_master_5_random_sequences
 #   sequencer                    string               42    uvm_test_top.tb.master_env.agent.sequencer                              
 # ----------------------------------------------------------------------------------------------------------------------------------
 # 
-# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(85) @ 175: uvm_test_top.tb.apb_scb [apb_scoreboard] [SB-SLAVE] Queued packet: PWRITE=0 ADDR=0x80000303 DATA=0x0 PRDATA=0x5500
-# UVM_INFO .\TB\sv\apb_slave_monitor.sv(52) @ 175: uvm_test_top.tb.slave_env.agent.monitor [apb_slave_monitor] Packet Collected :
+# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(85) @ 135: uvm_test_top.tb.apb_scb [apb_scoreboard] [SB-SLAVE] Queued packet: PWRITE=0 ADDR=0x80000001 DATA=0x0 PRDATA=0x5500
+# UVM_INFO .\TB\sv\apb_slave_monitor.sv(52) @ 135: uvm_test_top.tb.slave_env.agent.monitor [apb_slave_monitor] Packet Collected :
 # ---------------------------------------------------
 # Name           Type                Size  Value     
 # ---------------------------------------------------
@@ -202,14 +202,14 @@
 #   PWRITE       integral            1     'h0       
 #   PSELx        integral            2     'b10      
 #   PSTRB        integral            4     'b0       
-#   PADDR        integral            32    'h80000303
+#   PADDR        integral            32    'h80000001
 #   PWDATA       integral            32    'h0       
-#   begin_time   time                64    165       
-#   end_time     time                64    175       
+#   begin_time   time                64    125       
+#   end_time     time                64    135       
 # ---------------------------------------------------
 # 
-# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(73) @ 175: uvm_test_top.tb.apb_scb [apb_scoreboard] [SB-MASTER-READ] ADDR=0x80000303
-# UVM_INFO .\TB\sv\apb_master_monitor.sv(55) @ 175: uvm_test_top.tb.master_env.agent.monitor [apb_master_monitor] Packet Collected :
+# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(73) @ 135: uvm_test_top.tb.apb_scb [apb_scoreboard] [SB-MASTER-READ] ADDR=0x80000001
+# UVM_INFO .\TB\sv\apb_master_monitor.sv(55) @ 135: uvm_test_top.tb.master_env.agent.monitor [apb_master_monitor] Packet Collected :
 # ----------------------------------------------------------
 # Name                 Type                 Size  Value     
 # ----------------------------------------------------------
@@ -217,17 +217,17 @@
 #   READ               integral             1     'h1       
 #   WRITE              integral             1     'h0       
 #   APB_WRITE_STRB     integral             4     'b0       
-#   APB_WRITE_PADDR    integral             32    'h80000303
+#   APB_WRITE_PADDR    integral             32    'h80000001
 #   APB_WRITE_DATA     integral             32    'h55555555
-#   APB_READ_PADDR     integral             32    'h80000303
+#   APB_READ_PADDR     integral             32    'h80000001
 #   APB_READ_DATA_OUT  integral             32    'h5500    
-#   begin_time         time                 64    165       
-#   end_time           time                 64    175       
+#   begin_time         time                 64    125       
+#   end_time           time                 64    135       
 # ----------------------------------------------------------
 # 
-# [205][SLAVE-CONNECTOR][WRITE] ADDR=0x800000e4 SELx=10 DATA_WRITE=0xffffffff
-# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(85) @ 215: uvm_test_top.tb.apb_scb [apb_scoreboard] [SB-SLAVE] Queued packet: PWRITE=1 ADDR=0x800000e4 DATA=0xffffffff PRDATA=0x5500
-# UVM_INFO .\TB\sv\apb_slave_monitor.sv(52) @ 215: uvm_test_top.tb.slave_env.agent.monitor [apb_slave_monitor] Packet Collected :
+# [165][SLAVE-CONNECTOR][WRITE] ADDR=0x4 SELx=01 DATA_WRITE=0xffffffff
+# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(85) @ 175: uvm_test_top.tb.apb_scb [apb_scoreboard] [SB-SLAVE] Queued packet: PWRITE=1 ADDR=0x4 DATA=0xffffffff PRDATA=0x5500
+# UVM_INFO .\TB\sv\apb_slave_monitor.sv(52) @ 175: uvm_test_top.tb.slave_env.agent.monitor [apb_slave_monitor] Packet Collected :
 # ---------------------------------------------------
 # Name           Type                Size  Value     
 # ---------------------------------------------------
@@ -237,16 +237,16 @@
 #   PRDATA       integral            32    'h5500    
 #   PENABLE      integral            1     'h0X      
 #   PWRITE       integral            1     'h1       
-#   PSELx        integral            2     'b10      
+#   PSELx        integral            2     'b1       
 #   PSTRB        integral            4     'b1001    
-#   PADDR        integral            32    'h800000e4
+#   PADDR        integral            32    'h4       
 #   PWDATA       integral            32    'hffffffff
-#   begin_time   time                64    205       
-#   end_time     time                64    215       
+#   begin_time   time                64    165       
+#   end_time     time                64    175       
 # ---------------------------------------------------
 # 
-# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(65) @ 215: uvm_test_top.tb.apb_scb [apb_scoreboard] [SB-MASTER-WRITE] ADDR=0x800000e4 DATA=0xffffffff STRB=1001 NEW_VAL=0xff0000ff
-# UVM_INFO .\TB\sv\apb_master_monitor.sv(55) @ 215: uvm_test_top.tb.master_env.agent.monitor [apb_master_monitor] Packet Collected :
+# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(65) @ 175: uvm_test_top.tb.apb_scb [apb_scoreboard] [SB-MASTER-WRITE] ADDR=0x4 DATA=0xffffffff STRB=1001 NEW_VAL=0xff0000ff
+# UVM_INFO .\TB\sv\apb_master_monitor.sv(55) @ 175: uvm_test_top.tb.master_env.agent.monitor [apb_master_monitor] Packet Collected :
 # ----------------------------------------------------------
 # Name                 Type                 Size  Value     
 # ----------------------------------------------------------
@@ -254,17 +254,17 @@
 #   READ               integral             1     'h0       
 #   WRITE              integral             1     'h1       
 #   APB_WRITE_STRB     integral             4     'b1001    
-#   APB_WRITE_PADDR    integral             32    'h800000e4
+#   APB_WRITE_PADDR    integral             32    'h4       
 #   APB_WRITE_DATA     integral             32    'hffffffff
-#   APB_READ_PADDR     integral             32    'h80000303
+#   APB_READ_PADDR     integral             32    'h80000001
 #   APB_READ_DATA_OUT  integral             32    'h5500    
-#   begin_time         time                 64    205       
-#   end_time           time                 64    215       
+#   begin_time         time                 64    165       
+#   end_time           time                 64    175       
 # ----------------------------------------------------------
 # 
-# UVM_INFO .\TB\sv\apb_master_driver.sv(57) @ 245: uvm_test_top.tb.master_env.agent.driver [apb_master_driver] Read Data: ff0000ff
-# [245][SLAVE-CONNECTOR][READ] ADDR=0x800000e4 SELx=10 DATA_OUT=0xff0000ff
-# UVM_INFO .\TB\sv\apb_master_driver.sv(52) @ 245: uvm_test_top.tb.master_env.agent.driver [apb_master_driver] Sending Packet :
+# UVM_INFO .\TB\sv\apb_master_driver.sv(57) @ 205: uvm_test_top.tb.master_env.agent.driver [apb_master_driver] Read Data: ff0000ff
+# [205][SLAVE-CONNECTOR][READ] ADDR=0x4 SELx=01 DATA_OUT=0xff0000ff
+# UVM_INFO .\TB\sv\apb_master_driver.sv(52) @ 205: uvm_test_top.tb.master_env.agent.driver [apb_master_driver] Sending Packet :
 # ----------------------------------------------------------------------------------------------------------------------------------
 # Name                           Type                 Size  Value                                                                   
 # ----------------------------------------------------------------------------------------------------------------------------------
@@ -272,19 +272,19 @@
 #   READ                         integral             1     'h0X                                                                    
 #   WRITE                        integral             1     'h0X                                                                    
 #   APB_WRITE_STRB               integral             4     'b10                                                                    
-#   APB_WRITE_PADDR              integral             32    'h198                                                                   
+#   APB_WRITE_PADDR              integral             32    'h4                                                                     
 #   APB_WRITE_DATA               integral             32    'haaaaaaaa                                                              
-#   APB_READ_PADDR               integral             32    'h198                                                                   
+#   APB_READ_PADDR               integral             32    'h4                                                                     
 #   APB_READ_DATA_OUT            integral             32    'h0xxxxxxxx                                                             
-#   begin_time                   time                 64    245                                                                     
+#   begin_time                   time                 64    205                                                                     
 #   depth                        int                  32    'd2                                                                     
 #   parent sequence (name)       string               29    apb_master_5_random_sequences                                           
 #   parent sequence (full name)  string               72    uvm_test_top.tb.master_env.agent.sequencer.apb_master_5_random_sequences
 #   sequencer                    string               42    uvm_test_top.tb.master_env.agent.sequencer                              
 # ----------------------------------------------------------------------------------------------------------------------------------
 # 
-# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(85) @ 255: uvm_test_top.tb.apb_scb [apb_scoreboard] [SB-SLAVE] Queued packet: PWRITE=0 ADDR=0x800000e4 DATA=0x0 PRDATA=0xff0000ff
-# UVM_INFO .\TB\sv\apb_slave_monitor.sv(52) @ 255: uvm_test_top.tb.slave_env.agent.monitor [apb_slave_monitor] Packet Collected :
+# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(85) @ 215: uvm_test_top.tb.apb_scb [apb_scoreboard] [SB-SLAVE] Queued packet: PWRITE=0 ADDR=0x4 DATA=0x0 PRDATA=0xff0000ff
+# UVM_INFO .\TB\sv\apb_slave_monitor.sv(52) @ 215: uvm_test_top.tb.slave_env.agent.monitor [apb_slave_monitor] Packet Collected :
 # ---------------------------------------------------
 # Name           Type                Size  Value     
 # ---------------------------------------------------
@@ -294,16 +294,16 @@
 #   PRDATA       integral            32    'hff0000ff
 #   PENABLE      integral            1     'h0X      
 #   PWRITE       integral            1     'h0       
-#   PSELx        integral            2     'b10      
+#   PSELx        integral            2     'b1       
 #   PSTRB        integral            4     'b0       
-#   PADDR        integral            32    'h800000e4
+#   PADDR        integral            32    'h4       
 #   PWDATA       integral            32    'h0       
-#   begin_time   time                64    245       
-#   end_time     time                64    255       
+#   begin_time   time                64    205       
+#   end_time     time                64    215       
 # ---------------------------------------------------
 # 
-# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(73) @ 255: uvm_test_top.tb.apb_scb [apb_scoreboard] [SB-MASTER-READ] ADDR=0x800000e4
-# UVM_INFO .\TB\sv\apb_master_monitor.sv(55) @ 255: uvm_test_top.tb.master_env.agent.monitor [apb_master_monitor] Packet Collected :
+# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(73) @ 215: uvm_test_top.tb.apb_scb [apb_scoreboard] [SB-MASTER-READ] ADDR=0x4
+# UVM_INFO .\TB\sv\apb_master_monitor.sv(55) @ 215: uvm_test_top.tb.master_env.agent.monitor [apb_master_monitor] Packet Collected :
 # ----------------------------------------------------------
 # Name                 Type                 Size  Value     
 # ----------------------------------------------------------
@@ -311,17 +311,17 @@
 #   READ               integral             1     'h1       
 #   WRITE              integral             1     'h0       
 #   APB_WRITE_STRB     integral             4     'b0       
-#   APB_WRITE_PADDR    integral             32    'h800000e4
+#   APB_WRITE_PADDR    integral             32    'h4       
 #   APB_WRITE_DATA     integral             32    'hffffffff
-#   APB_READ_PADDR     integral             32    'h800000e4
+#   APB_READ_PADDR     integral             32    'h4       
 #   APB_READ_DATA_OUT  integral             32    'hff0000ff
-#   begin_time         time                 64    245       
-#   end_time           time                 64    255       
+#   begin_time         time                 64    205       
+#   end_time           time                 64    215       
 # ----------------------------------------------------------
 # 
-# [285][SLAVE-CONNECTOR][WRITE] ADDR=0x198 SELx=01 DATA_WRITE=0xaaaaaaaa
-# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(85) @ 295: uvm_test_top.tb.apb_scb [apb_scoreboard] [SB-SLAVE] Queued packet: PWRITE=1 ADDR=0x198 DATA=0xaaaaaaaa PRDATA=0xff0000ff
-# UVM_INFO .\TB\sv\apb_slave_monitor.sv(52) @ 295: uvm_test_top.tb.slave_env.agent.monitor [apb_slave_monitor] Packet Collected :
+# [245][SLAVE-CONNECTOR][WRITE] ADDR=0x4 SELx=01 DATA_WRITE=0xaaaaaaaa
+# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(85) @ 255: uvm_test_top.tb.apb_scb [apb_scoreboard] [SB-SLAVE] Queued packet: PWRITE=1 ADDR=0x4 DATA=0xaaaaaaaa PRDATA=0xff0000ff
+# UVM_INFO .\TB\sv\apb_slave_monitor.sv(52) @ 255: uvm_test_top.tb.slave_env.agent.monitor [apb_slave_monitor] Packet Collected :
 # ---------------------------------------------------
 # Name           Type                Size  Value     
 # ---------------------------------------------------
@@ -333,14 +333,14 @@
 #   PWRITE       integral            1     'h1       
 #   PSELx        integral            2     'b1       
 #   PSTRB        integral            4     'b10      
-#   PADDR        integral            32    'h198     
+#   PADDR        integral            32    'h4       
 #   PWDATA       integral            32    'haaaaaaaa
-#   begin_time   time                64    285       
-#   end_time     time                64    295       
+#   begin_time   time                64    245       
+#   end_time     time                64    255       
 # ---------------------------------------------------
 # 
-# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(65) @ 295: uvm_test_top.tb.apb_scb [apb_scoreboard] [SB-MASTER-WRITE] ADDR=0x198 DATA=0xaaaaaaaa STRB=0010 NEW_VAL=0xaa00
-# UVM_INFO .\TB\sv\apb_master_monitor.sv(55) @ 295: uvm_test_top.tb.master_env.agent.monitor [apb_master_monitor] Packet Collected :
+# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(65) @ 255: uvm_test_top.tb.apb_scb [apb_scoreboard] [SB-MASTER-WRITE] ADDR=0x4 DATA=0xaaaaaaaa STRB=0010 NEW_VAL=0xff00aaff
+# UVM_INFO .\TB\sv\apb_master_monitor.sv(55) @ 255: uvm_test_top.tb.master_env.agent.monitor [apb_master_monitor] Packet Collected :
 # ----------------------------------------------------------
 # Name                 Type                 Size  Value     
 # ----------------------------------------------------------
@@ -348,17 +348,17 @@
 #   READ               integral             1     'h0       
 #   WRITE              integral             1     'h1       
 #   APB_WRITE_STRB     integral             4     'b10      
-#   APB_WRITE_PADDR    integral             32    'h198     
+#   APB_WRITE_PADDR    integral             32    'h4       
 #   APB_WRITE_DATA     integral             32    'haaaaaaaa
-#   APB_READ_PADDR     integral             32    'h800000e4
+#   APB_READ_PADDR     integral             32    'h4       
 #   APB_READ_DATA_OUT  integral             32    'hff0000ff
-#   begin_time         time                 64    285       
-#   end_time           time                 64    295       
+#   begin_time         time                 64    245       
+#   end_time           time                 64    255       
 # ----------------------------------------------------------
 # 
-# UVM_INFO .\TB\sv\apb_master_driver.sv(57) @ 325: uvm_test_top.tb.master_env.agent.driver [apb_master_driver] Read Data: aa00
-# [325][SLAVE-CONNECTOR][READ] ADDR=0x198 SELx=01 DATA_OUT=0xaa00
-# UVM_INFO .\TB\sv\apb_master_driver.sv(52) @ 325: uvm_test_top.tb.master_env.agent.driver [apb_master_driver] Sending Packet :
+# UVM_INFO .\TB\sv\apb_master_driver.sv(57) @ 285: uvm_test_top.tb.master_env.agent.driver [apb_master_driver] Read Data: ff00aaff
+# [285][SLAVE-CONNECTOR][READ] ADDR=0x4 SELx=01 DATA_OUT=0xff00aaff
+# UVM_INFO .\TB\sv\apb_master_driver.sv(52) @ 285: uvm_test_top.tb.master_env.agent.driver [apb_master_driver] Sending Packet :
 # ----------------------------------------------------------------------------------------------------------------------------------
 # Name                           Type                 Size  Value                                                                   
 # ----------------------------------------------------------------------------------------------------------------------------------
@@ -366,38 +366,38 @@
 #   READ                         integral             1     'h0X                                                                    
 #   WRITE                        integral             1     'h0X                                                                    
 #   APB_WRITE_STRB               integral             4     'b1000                                                                  
-#   APB_WRITE_PADDR              integral             32    'h296                                                                   
+#   APB_WRITE_PADDR              integral             32    'h4                                                                     
 #   APB_WRITE_DATA               integral             32    'h0                                                                     
-#   APB_READ_PADDR               integral             32    'h296                                                                   
+#   APB_READ_PADDR               integral             32    'h4                                                                     
 #   APB_READ_DATA_OUT            integral             32    'h0xxxxxxxx                                                             
-#   begin_time                   time                 64    325                                                                     
+#   begin_time                   time                 64    285                                                                     
 #   depth                        int                  32    'd2                                                                     
 #   parent sequence (name)       string               29    apb_master_5_random_sequences                                           
 #   parent sequence (full name)  string               72    uvm_test_top.tb.master_env.agent.sequencer.apb_master_5_random_sequences
 #   sequencer                    string               42    uvm_test_top.tb.master_env.agent.sequencer                              
 # ----------------------------------------------------------------------------------------------------------------------------------
 # 
-# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(85) @ 335: uvm_test_top.tb.apb_scb [apb_scoreboard] [SB-SLAVE] Queued packet: PWRITE=0 ADDR=0x198 DATA=0x0 PRDATA=0xaa00
-# UVM_INFO .\TB\sv\apb_slave_monitor.sv(52) @ 335: uvm_test_top.tb.slave_env.agent.monitor [apb_slave_monitor] Packet Collected :
-# -----------------------------------------------
-# Name           Type                Size  Value 
-# -----------------------------------------------
-# apb_slave_pkt  apb_slave_seq_item  -     @846  
-#   PSLVERR      integral            1     'h0X  
-#   PREADY       integral            1     'h0X  
-#   PRDATA       integral            32    'haa00
-#   PENABLE      integral            1     'h0X  
-#   PWRITE       integral            1     'h0   
-#   PSELx        integral            2     'b1   
-#   PSTRB        integral            4     'b0   
-#   PADDR        integral            32    'h198 
-#   PWDATA       integral            32    'h0   
-#   begin_time   time                64    325   
-#   end_time     time                64    335   
-# -----------------------------------------------
+# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(85) @ 295: uvm_test_top.tb.apb_scb [apb_scoreboard] [SB-SLAVE] Queued packet: PWRITE=0 ADDR=0x4 DATA=0x0 PRDATA=0xff00aaff
+# UVM_INFO .\TB\sv\apb_slave_monitor.sv(52) @ 295: uvm_test_top.tb.slave_env.agent.monitor [apb_slave_monitor] Packet Collected :
+# ---------------------------------------------------
+# Name           Type                Size  Value     
+# ---------------------------------------------------
+# apb_slave_pkt  apb_slave_seq_item  -     @846      
+#   PSLVERR      integral            1     'h0X      
+#   PREADY       integral            1     'h0X      
+#   PRDATA       integral            32    'hff00aaff
+#   PENABLE      integral            1     'h0X      
+#   PWRITE       integral            1     'h0       
+#   PSELx        integral            2     'b1       
+#   PSTRB        integral            4     'b0       
+#   PADDR        integral            32    'h4       
+#   PWDATA       integral            32    'h0       
+#   begin_time   time                64    285       
+#   end_time     time                64    295       
+# ---------------------------------------------------
 # 
-# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(73) @ 335: uvm_test_top.tb.apb_scb [apb_scoreboard] [SB-MASTER-READ] ADDR=0x198
-# UVM_INFO .\TB\sv\apb_master_monitor.sv(55) @ 335: uvm_test_top.tb.master_env.agent.monitor [apb_master_monitor] Packet Collected :
+# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(73) @ 295: uvm_test_top.tb.apb_scb [apb_scoreboard] [SB-MASTER-READ] ADDR=0x4
+# UVM_INFO .\TB\sv\apb_master_monitor.sv(55) @ 295: uvm_test_top.tb.master_env.agent.monitor [apb_master_monitor] Packet Collected :
 # ----------------------------------------------------------
 # Name                 Type                 Size  Value     
 # ----------------------------------------------------------
@@ -405,54 +405,54 @@
 #   READ               integral             1     'h1       
 #   WRITE              integral             1     'h0       
 #   APB_WRITE_STRB     integral             4     'b0       
-#   APB_WRITE_PADDR    integral             32    'h198     
+#   APB_WRITE_PADDR    integral             32    'h4       
 #   APB_WRITE_DATA     integral             32    'haaaaaaaa
-#   APB_READ_PADDR     integral             32    'h198     
-#   APB_READ_DATA_OUT  integral             32    'haa00    
+#   APB_READ_PADDR     integral             32    'h4       
+#   APB_READ_DATA_OUT  integral             32    'hff00aaff
+#   begin_time         time                 64    285       
+#   end_time           time                 64    295       
+# ----------------------------------------------------------
+# 
+# [325][SLAVE-CONNECTOR][WRITE] ADDR=0x4 SELx=01 DATA_WRITE=0x0
+# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(85) @ 335: uvm_test_top.tb.apb_scb [apb_scoreboard] [SB-SLAVE] Queued packet: PWRITE=1 ADDR=0x4 DATA=0x0 PRDATA=0xff00aaff
+# UVM_INFO .\TB\sv\apb_slave_monitor.sv(52) @ 335: uvm_test_top.tb.slave_env.agent.monitor [apb_slave_monitor] Packet Collected :
+# ---------------------------------------------------
+# Name           Type                Size  Value     
+# ---------------------------------------------------
+# apb_slave_pkt  apb_slave_seq_item  -     @866      
+#   PSLVERR      integral            1     'h0X      
+#   PREADY       integral            1     'h0X      
+#   PRDATA       integral            32    'hff00aaff
+#   PENABLE      integral            1     'h0X      
+#   PWRITE       integral            1     'h1       
+#   PSELx        integral            2     'b1       
+#   PSTRB        integral            4     'b1000    
+#   PADDR        integral            32    'h4       
+#   PWDATA       integral            32    'h0       
+#   begin_time   time                64    325       
+#   end_time     time                64    335       
+# ---------------------------------------------------
+# 
+# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(65) @ 335: uvm_test_top.tb.apb_scb [apb_scoreboard] [SB-MASTER-WRITE] ADDR=0x4 DATA=0x0 STRB=1000 NEW_VAL=0xaaff
+# UVM_INFO .\TB\sv\apb_master_monitor.sv(55) @ 335: uvm_test_top.tb.master_env.agent.monitor [apb_master_monitor] Packet Collected :
+# ----------------------------------------------------------
+# Name                 Type                 Size  Value     
+# ----------------------------------------------------------
+# apb_master_pkt       apb_master_seq_item  -     @874      
+#   READ               integral             1     'h0       
+#   WRITE              integral             1     'h1       
+#   APB_WRITE_STRB     integral             4     'b1000    
+#   APB_WRITE_PADDR    integral             32    'h4       
+#   APB_WRITE_DATA     integral             32    'h0       
+#   APB_READ_PADDR     integral             32    'h4       
+#   APB_READ_DATA_OUT  integral             32    'hff00aaff
 #   begin_time         time                 64    325       
 #   end_time           time                 64    335       
 # ----------------------------------------------------------
 # 
-# [385][SLAVE-CONNECTOR][WRITE] ADDR=0x296 SELx=01 DATA_WRITE=0x0
-# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(85) @ 395: uvm_test_top.tb.apb_scb [apb_scoreboard] [SB-SLAVE] Queued packet: PWRITE=1 ADDR=0x296 DATA=0x0 PRDATA=0xaa00
-# UVM_INFO .\TB\sv\apb_slave_monitor.sv(52) @ 395: uvm_test_top.tb.slave_env.agent.monitor [apb_slave_monitor] Packet Collected :
-# -----------------------------------------------
-# Name           Type                Size  Value 
-# -----------------------------------------------
-# apb_slave_pkt  apb_slave_seq_item  -     @866  
-#   PSLVERR      integral            1     'h0X  
-#   PREADY       integral            1     'h0X  
-#   PRDATA       integral            32    'haa00
-#   PENABLE      integral            1     'h0X  
-#   PWRITE       integral            1     'h1   
-#   PSELx        integral            2     'b1   
-#   PSTRB        integral            4     'b1000
-#   PADDR        integral            32    'h296 
-#   PWDATA       integral            32    'h0   
-#   begin_time   time                64    385   
-#   end_time     time                64    395   
-# -----------------------------------------------
-# 
-# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(65) @ 395: uvm_test_top.tb.apb_scb [apb_scoreboard] [SB-MASTER-WRITE] ADDR=0x296 DATA=0x0 STRB=1000 NEW_VAL=0x0
-# UVM_INFO .\TB\sv\apb_master_monitor.sv(55) @ 395: uvm_test_top.tb.master_env.agent.monitor [apb_master_monitor] Packet Collected :
-# ------------------------------------------------------
-# Name                 Type                 Size  Value 
-# ------------------------------------------------------
-# apb_master_pkt       apb_master_seq_item  -     @874  
-#   READ               integral             1     'h0   
-#   WRITE              integral             1     'h1   
-#   APB_WRITE_STRB     integral             4     'b1000
-#   APB_WRITE_PADDR    integral             32    'h296 
-#   APB_WRITE_DATA     integral             32    'h0   
-#   APB_READ_PADDR     integral             32    'h198 
-#   APB_READ_DATA_OUT  integral             32    'haa00
-#   begin_time         time                 64    385   
-#   end_time           time                 64    395   
-# ------------------------------------------------------
-# 
-# UVM_INFO .\TB\sv\apb_master_driver.sv(57) @ 445: uvm_test_top.tb.master_env.agent.driver [apb_master_driver] Read Data: 0
-# [445][SLAVE-CONNECTOR][READ] ADDR=0x296 SELx=01 DATA_OUT=0x0
-# UVM_INFO .\TB\sv\apb_master_driver.sv(52) @ 445: uvm_test_top.tb.master_env.agent.driver [apb_master_driver] Sending Packet :
+# UVM_INFO .\TB\sv\apb_master_driver.sv(57) @ 365: uvm_test_top.tb.master_env.agent.driver [apb_master_driver] Read Data: aaff
+# [365][SLAVE-CONNECTOR][READ] ADDR=0x4 SELx=01 DATA_OUT=0xaaff
+# UVM_INFO .\TB\sv\apb_master_driver.sv(52) @ 365: uvm_test_top.tb.master_env.agent.driver [apb_master_driver] Sending Packet :
 # ----------------------------------------------------------------------------------------------------------------------------------
 # Name                           Type                 Size  Value                                                                   
 # ----------------------------------------------------------------------------------------------------------------------------------
@@ -460,9 +460,103 @@
 #   READ                         integral             1     'h0X                                                                    
 #   WRITE                        integral             1     'h0X                                                                    
 #   APB_WRITE_STRB               integral             4     'b1100                                                                  
-#   APB_WRITE_PADDR              integral             32    'h80000315                                                              
+#   APB_WRITE_PADDR              integral             32    'h8                                                                     
 #   APB_WRITE_DATA               integral             32    'h8f018a0a                                                              
-#   APB_READ_PADDR               integral             32    'h80000315                                                              
+#   APB_READ_PADDR               integral             32    'h8                                                                     
+#   APB_READ_DATA_OUT            integral             32    'h0xxxxxxxx                                                             
+#   begin_time                   time                 64    365                                                                     
+#   depth                        int                  32    'd2                                                                     
+#   parent sequence (name)       string               29    apb_master_5_random_sequences                                           
+#   parent sequence (full name)  string               72    uvm_test_top.tb.master_env.agent.sequencer.apb_master_5_random_sequences
+#   sequencer                    string               42    uvm_test_top.tb.master_env.agent.sequencer                              
+# ----------------------------------------------------------------------------------------------------------------------------------
+# 
+# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(85) @ 375: uvm_test_top.tb.apb_scb [apb_scoreboard] [SB-SLAVE] Queued packet: PWRITE=0 ADDR=0x4 DATA=0x0 PRDATA=0xaaff
+# UVM_INFO .\TB\sv\apb_slave_monitor.sv(52) @ 375: uvm_test_top.tb.slave_env.agent.monitor [apb_slave_monitor] Packet Collected :
+# -----------------------------------------------
+# Name           Type                Size  Value 
+# -----------------------------------------------
+# apb_slave_pkt  apb_slave_seq_item  -     @882  
+#   PSLVERR      integral            1     'h0X  
+#   PREADY       integral            1     'h0X  
+#   PRDATA       integral            32    'haaff
+#   PENABLE      integral            1     'h0X  
+#   PWRITE       integral            1     'h0   
+#   PSELx        integral            2     'b1   
+#   PSTRB        integral            4     'b0   
+#   PADDR        integral            32    'h4   
+#   PWDATA       integral            32    'h0   
+#   begin_time   time                64    365   
+#   end_time     time                64    375   
+# -----------------------------------------------
+# 
+# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(73) @ 375: uvm_test_top.tb.apb_scb [apb_scoreboard] [SB-MASTER-READ] ADDR=0x4
+# UVM_INFO .\TB\sv\apb_master_monitor.sv(55) @ 375: uvm_test_top.tb.master_env.agent.monitor [apb_master_monitor] Packet Collected :
+# ------------------------------------------------------
+# Name                 Type                 Size  Value 
+# ------------------------------------------------------
+# apb_master_pkt       apb_master_seq_item  -     @890  
+#   READ               integral             1     'h1   
+#   WRITE              integral             1     'h0   
+#   APB_WRITE_STRB     integral             4     'b0   
+#   APB_WRITE_PADDR    integral             32    'h4   
+#   APB_WRITE_DATA     integral             32    'h0   
+#   APB_READ_PADDR     integral             32    'h4   
+#   APB_READ_DATA_OUT  integral             32    'haaff
+#   begin_time         time                 64    365   
+#   end_time           time                 64    375   
+# ------------------------------------------------------
+# 
+# [405][SLAVE-CONNECTOR][WRITE] ADDR=0x8 SELx=01 DATA_WRITE=0x8f018a0a
+# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(85) @ 415: uvm_test_top.tb.apb_scb [apb_scoreboard] [SB-SLAVE] Queued packet: PWRITE=1 ADDR=0x8 DATA=0x8f018a0a PRDATA=0xaaff
+# UVM_INFO .\TB\sv\apb_slave_monitor.sv(52) @ 415: uvm_test_top.tb.slave_env.agent.monitor [apb_slave_monitor] Packet Collected :
+# ---------------------------------------------------
+# Name           Type                Size  Value     
+# ---------------------------------------------------
+# apb_slave_pkt  apb_slave_seq_item  -     @902      
+#   PSLVERR      integral            1     'h0X      
+#   PREADY       integral            1     'h0X      
+#   PRDATA       integral            32    'haaff    
+#   PENABLE      integral            1     'h0X      
+#   PWRITE       integral            1     'h1       
+#   PSELx        integral            2     'b1       
+#   PSTRB        integral            4     'b1100    
+#   PADDR        integral            32    'h8       
+#   PWDATA       integral            32    'h8f018a0a
+#   begin_time   time                64    405       
+#   end_time     time                64    415       
+# ---------------------------------------------------
+# 
+# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(65) @ 415: uvm_test_top.tb.apb_scb [apb_scoreboard] [SB-MASTER-WRITE] ADDR=0x8 DATA=0x8f018a0a STRB=1100 NEW_VAL=0x8f010000
+# UVM_INFO .\TB\sv\apb_master_monitor.sv(55) @ 415: uvm_test_top.tb.master_env.agent.monitor [apb_master_monitor] Packet Collected :
+# ----------------------------------------------------------
+# Name                 Type                 Size  Value     
+# ----------------------------------------------------------
+# apb_master_pkt       apb_master_seq_item  -     @910      
+#   READ               integral             1     'h0       
+#   WRITE              integral             1     'h1       
+#   APB_WRITE_STRB     integral             4     'b1100    
+#   APB_WRITE_PADDR    integral             32    'h8       
+#   APB_WRITE_DATA     integral             32    'h8f018a0a
+#   APB_READ_PADDR     integral             32    'h4       
+#   APB_READ_DATA_OUT  integral             32    'haaff    
+#   begin_time         time                 64    405       
+#   end_time           time                 64    415       
+# ----------------------------------------------------------
+# 
+# UVM_INFO .\TB\sv\apb_master_driver.sv(57) @ 445: uvm_test_top.tb.master_env.agent.driver [apb_master_driver] Read Data: 8f010000
+# [445][SLAVE-CONNECTOR][READ] ADDR=0x8 SELx=01 DATA_OUT=0x8f010000
+# UVM_INFO .\TB\sv\apb_master_driver.sv(52) @ 445: uvm_test_top.tb.master_env.agent.driver [apb_master_driver] Sending Packet :
+# ----------------------------------------------------------------------------------------------------------------------------------
+# Name                           Type                 Size  Value                                                                   
+# ----------------------------------------------------------------------------------------------------------------------------------
+# req                            apb_master_seq_item  -     @930                                                                    
+#   READ                         integral             1     'h0X                                                                    
+#   WRITE                        integral             1     'h0X                                                                    
+#   APB_WRITE_STRB               integral             4     'b1110                                                                  
+#   APB_WRITE_PADDR              integral             32    'h1                                                                     
+#   APB_WRITE_DATA               integral             32    'h55555555                                                              
+#   APB_READ_PADDR               integral             32    'h1                                                                     
 #   APB_READ_DATA_OUT            integral             32    'h0xxxxxxxx                                                             
 #   begin_time                   time                 64    445                                                                     
 #   depth                        int                  32    'd2                                                                     
@@ -471,84 +565,8 @@
 #   sequencer                    string               42    uvm_test_top.tb.master_env.agent.sequencer                              
 # ----------------------------------------------------------------------------------------------------------------------------------
 # 
-# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(85) @ 455: uvm_test_top.tb.apb_scb [apb_scoreboard] [SB-SLAVE] Queued packet: PWRITE=0 ADDR=0x296 DATA=0x0 PRDATA=0x0
+# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(85) @ 455: uvm_test_top.tb.apb_scb [apb_scoreboard] [SB-SLAVE] Queued packet: PWRITE=0 ADDR=0x8 DATA=0x0 PRDATA=0x8f010000
 # UVM_INFO .\TB\sv\apb_slave_monitor.sv(52) @ 455: uvm_test_top.tb.slave_env.agent.monitor [apb_slave_monitor] Packet Collected :
-# ----------------------------------------------
-# Name           Type                Size  Value
-# ----------------------------------------------
-# apb_slave_pkt  apb_slave_seq_item  -     @882 
-#   PSLVERR      integral            1     'h0X 
-#   PREADY       integral            1     'h0X 
-#   PRDATA       integral            32    'h0  
-#   PENABLE      integral            1     'h0X 
-#   PWRITE       integral            1     'h0  
-#   PSELx        integral            2     'b1  
-#   PSTRB        integral            4     'b0  
-#   PADDR        integral            32    'h296
-#   PWDATA       integral            32    'h0  
-#   begin_time   time                64    445  
-#   end_time     time                64    455  
-# ----------------------------------------------
-# 
-# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(73) @ 455: uvm_test_top.tb.apb_scb [apb_scoreboard] [SB-MASTER-READ] ADDR=0x296
-# UVM_INFO .\TB\sv\apb_master_monitor.sv(55) @ 455: uvm_test_top.tb.master_env.agent.monitor [apb_master_monitor] Packet Collected :
-# -----------------------------------------------------
-# Name                 Type                 Size  Value
-# -----------------------------------------------------
-# apb_master_pkt       apb_master_seq_item  -     @890 
-#   READ               integral             1     'h1  
-#   WRITE              integral             1     'h0  
-#   APB_WRITE_STRB     integral             4     'b0  
-#   APB_WRITE_PADDR    integral             32    'h296
-#   APB_WRITE_DATA     integral             32    'h0  
-#   APB_READ_PADDR     integral             32    'h296
-#   APB_READ_DATA_OUT  integral             32    'h0  
-#   begin_time         time                 64    445  
-#   end_time           time                 64    455  
-# -----------------------------------------------------
-# 
-# [495][SLAVE-CONNECTOR][WRITE] ADDR=0x80000315 SELx=10 DATA_WRITE=0x8f018a0a
-# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(85) @ 505: uvm_test_top.tb.apb_scb [apb_scoreboard] [SB-SLAVE] Queued packet: PWRITE=1 ADDR=0x80000315 DATA=0x8f018a0a PRDATA=0x0
-# UVM_INFO .\TB\sv\apb_slave_monitor.sv(52) @ 505: uvm_test_top.tb.slave_env.agent.monitor [apb_slave_monitor] Packet Collected :
-# ---------------------------------------------------
-# Name           Type                Size  Value     
-# ---------------------------------------------------
-# apb_slave_pkt  apb_slave_seq_item  -     @902      
-#   PSLVERR      integral            1     'h0X      
-#   PREADY       integral            1     'h0X      
-#   PRDATA       integral            32    'h0       
-#   PENABLE      integral            1     'h0X      
-#   PWRITE       integral            1     'h1       
-#   PSELx        integral            2     'b10      
-#   PSTRB        integral            4     'b1100    
-#   PADDR        integral            32    'h80000315
-#   PWDATA       integral            32    'h8f018a0a
-#   begin_time   time                64    495       
-#   end_time     time                64    505       
-# ---------------------------------------------------
-# 
-# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(65) @ 505: uvm_test_top.tb.apb_scb [apb_scoreboard] [SB-MASTER-WRITE] ADDR=0x80000315 DATA=0x8f018a0a STRB=1100 NEW_VAL=0x8f010000
-# UVM_INFO .\TB\sv\apb_master_monitor.sv(55) @ 505: uvm_test_top.tb.master_env.agent.monitor [apb_master_monitor] Packet Collected :
-# ----------------------------------------------------------
-# Name                 Type                 Size  Value     
-# ----------------------------------------------------------
-# apb_master_pkt       apb_master_seq_item  -     @910      
-#   READ               integral             1     'h0       
-#   WRITE              integral             1     'h1       
-#   APB_WRITE_STRB     integral             4     'b1100    
-#   APB_WRITE_PADDR    integral             32    'h80000315
-#   APB_WRITE_DATA     integral             32    'h8f018a0a
-#   APB_READ_PADDR     integral             32    'h296     
-#   APB_READ_DATA_OUT  integral             32    'h0       
-#   begin_time         time                 64    495       
-#   end_time           time                 64    505       
-# ----------------------------------------------------------
-# 
-# UVM_INFO .\TB\sv\apb_master_driver.sv(57) @ 545: uvm_test_top.tb.master_env.agent.driver [apb_master_driver] Read Data: 8f010000
-# [545][SLAVE-CONNECTOR][READ] ADDR=0x80000315 SELx=10 DATA_OUT=0x8f010000
-# UVM_INFO .\TB\sv\apb_master_sequences.sv(36) @ 545: uvm_test_top.tb.master_env.agent.sequencer@@apb_master_5_random_sequences [apb_master_5_random_sequences] drop objection
-# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(85) @ 555: uvm_test_top.tb.apb_scb [apb_scoreboard] [SB-SLAVE] Queued packet: PWRITE=0 ADDR=0x80000315 DATA=0x0 PRDATA=0x8f010000
-# UVM_INFO .\TB\sv\apb_slave_monitor.sv(52) @ 555: uvm_test_top.tb.slave_env.agent.monitor [apb_slave_monitor] Packet Collected :
 # ---------------------------------------------------
 # Name           Type                Size  Value     
 # ---------------------------------------------------
@@ -558,16 +576,16 @@
 #   PRDATA       integral            32    'h8f010000
 #   PENABLE      integral            1     'h0X      
 #   PWRITE       integral            1     'h0       
-#   PSELx        integral            2     'b10      
+#   PSELx        integral            2     'b1       
 #   PSTRB        integral            4     'b0       
-#   PADDR        integral            32    'h80000315
+#   PADDR        integral            32    'h8       
 #   PWDATA       integral            32    'h0       
-#   begin_time   time                64    545       
-#   end_time     time                64    555       
+#   begin_time   time                64    445       
+#   end_time     time                64    455       
 # ---------------------------------------------------
 # 
-# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(73) @ 555: uvm_test_top.tb.apb_scb [apb_scoreboard] [SB-MASTER-READ] ADDR=0x80000315
-# UVM_INFO .\TB\sv\apb_master_monitor.sv(55) @ 555: uvm_test_top.tb.master_env.agent.monitor [apb_master_monitor] Packet Collected :
+# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(73) @ 455: uvm_test_top.tb.apb_scb [apb_scoreboard] [SB-MASTER-READ] ADDR=0x8
+# UVM_INFO .\TB\sv\apb_master_monitor.sv(55) @ 455: uvm_test_top.tb.master_env.agent.monitor [apb_master_monitor] Packet Collected :
 # ----------------------------------------------------------
 # Name                 Type                 Size  Value     
 # ----------------------------------------------------------
@@ -575,38 +593,500 @@
 #   READ               integral             1     'h1       
 #   WRITE              integral             1     'h0       
 #   APB_WRITE_STRB     integral             4     'b0       
-#   APB_WRITE_PADDR    integral             32    'h80000315
+#   APB_WRITE_PADDR    integral             32    'h8       
 #   APB_WRITE_DATA     integral             32    'h8f018a0a
-#   APB_READ_PADDR     integral             32    'h80000315
+#   APB_READ_PADDR     integral             32    'h8       
 #   APB_READ_DATA_OUT  integral             32    'h8f010000
+#   begin_time         time                 64    445       
+#   end_time           time                 64    455       
+# ----------------------------------------------------------
+# 
+# [495][SLAVE-CONNECTOR][WRITE] ADDR=0x1 SELx=01 DATA_WRITE=0x55555555
+# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(85) @ 505: uvm_test_top.tb.apb_scb [apb_scoreboard] [SB-SLAVE] Queued packet: PWRITE=1 ADDR=0x1 DATA=0x55555555 PRDATA=0x8f010000
+# UVM_INFO .\TB\sv\apb_slave_monitor.sv(52) @ 505: uvm_test_top.tb.slave_env.agent.monitor [apb_slave_monitor] Packet Collected :
+# ---------------------------------------------------
+# Name           Type                Size  Value     
+# ---------------------------------------------------
+# apb_slave_pkt  apb_slave_seq_item  -     @938      
+#   PSLVERR      integral            1     'h0X      
+#   PREADY       integral            1     'h0X      
+#   PRDATA       integral            32    'h8f010000
+#   PENABLE      integral            1     'h0X      
+#   PWRITE       integral            1     'h1       
+#   PSELx        integral            2     'b1       
+#   PSTRB        integral            4     'b1110    
+#   PADDR        integral            32    'h1       
+#   PWDATA       integral            32    'h55555555
+#   begin_time   time                64    495       
+#   end_time     time                64    505       
+# ---------------------------------------------------
+# 
+# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(65) @ 505: uvm_test_top.tb.apb_scb [apb_scoreboard] [SB-MASTER-WRITE] ADDR=0x1 DATA=0x55555555 STRB=1110 NEW_VAL=0x55555500
+# UVM_INFO .\TB\sv\apb_master_monitor.sv(55) @ 505: uvm_test_top.tb.master_env.agent.monitor [apb_master_monitor] Packet Collected :
+# ----------------------------------------------------------
+# Name                 Type                 Size  Value     
+# ----------------------------------------------------------
+# apb_master_pkt       apb_master_seq_item  -     @946      
+#   READ               integral             1     'h0       
+#   WRITE              integral             1     'h1       
+#   APB_WRITE_STRB     integral             4     'b1110    
+#   APB_WRITE_PADDR    integral             32    'h1       
+#   APB_WRITE_DATA     integral             32    'h55555555
+#   APB_READ_PADDR     integral             32    'h8       
+#   APB_READ_DATA_OUT  integral             32    'h8f010000
+#   begin_time         time                 64    495       
+#   end_time           time                 64    505       
+# ----------------------------------------------------------
+# 
+# UVM_INFO .\TB\sv\apb_master_driver.sv(57) @ 545: uvm_test_top.tb.master_env.agent.driver [apb_master_driver] Read Data: 55555500
+# [545][SLAVE-CONNECTOR][READ] ADDR=0x1 SELx=01 DATA_OUT=0x55555500
+# UVM_INFO .\TB\sv\apb_master_driver.sv(52) @ 545: uvm_test_top.tb.master_env.agent.driver [apb_master_driver] Sending Packet :
+# ----------------------------------------------------------------------------------------------------------------------------------
+# Name                           Type                 Size  Value                                                                   
+# ----------------------------------------------------------------------------------------------------------------------------------
+# req                            apb_master_seq_item  -     @966                                                                    
+#   READ                         integral             1     'h0X                                                                    
+#   WRITE                        integral             1     'h0X                                                                    
+#   APB_WRITE_STRB               integral             4     'b1000                                                                  
+#   APB_WRITE_PADDR              integral             32    'h80000001                                                              
+#   APB_WRITE_DATA               integral             32    'h99ebfb50                                                              
+#   APB_READ_PADDR               integral             32    'h80000001                                                              
+#   APB_READ_DATA_OUT            integral             32    'h0xxxxxxxx                                                             
+#   begin_time                   time                 64    545                                                                     
+#   depth                        int                  32    'd2                                                                     
+#   parent sequence (name)       string               29    apb_master_5_random_sequences                                           
+#   parent sequence (full name)  string               72    uvm_test_top.tb.master_env.agent.sequencer.apb_master_5_random_sequences
+#   sequencer                    string               42    uvm_test_top.tb.master_env.agent.sequencer                              
+# ----------------------------------------------------------------------------------------------------------------------------------
+# 
+# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(85) @ 555: uvm_test_top.tb.apb_scb [apb_scoreboard] [SB-SLAVE] Queued packet: PWRITE=0 ADDR=0x1 DATA=0x0 PRDATA=0x55555500
+# UVM_INFO .\TB\sv\apb_slave_monitor.sv(52) @ 555: uvm_test_top.tb.slave_env.agent.monitor [apb_slave_monitor] Packet Collected :
+# ---------------------------------------------------
+# Name           Type                Size  Value     
+# ---------------------------------------------------
+# apb_slave_pkt  apb_slave_seq_item  -     @954      
+#   PSLVERR      integral            1     'h0X      
+#   PREADY       integral            1     'h0X      
+#   PRDATA       integral            32    'h55555500
+#   PENABLE      integral            1     'h0X      
+#   PWRITE       integral            1     'h0       
+#   PSELx        integral            2     'b1       
+#   PSTRB        integral            4     'b0       
+#   PADDR        integral            32    'h1       
+#   PWDATA       integral            32    'h0       
+#   begin_time   time                64    545       
+#   end_time     time                64    555       
+# ---------------------------------------------------
+# 
+# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(73) @ 555: uvm_test_top.tb.apb_scb [apb_scoreboard] [SB-MASTER-READ] ADDR=0x1
+# UVM_INFO .\TB\sv\apb_master_monitor.sv(55) @ 555: uvm_test_top.tb.master_env.agent.monitor [apb_master_monitor] Packet Collected :
+# ----------------------------------------------------------
+# Name                 Type                 Size  Value     
+# ----------------------------------------------------------
+# apb_master_pkt       apb_master_seq_item  -     @962      
+#   READ               integral             1     'h1       
+#   WRITE              integral             1     'h0       
+#   APB_WRITE_STRB     integral             4     'b0       
+#   APB_WRITE_PADDR    integral             32    'h1       
+#   APB_WRITE_DATA     integral             32    'h55555555
+#   APB_READ_PADDR     integral             32    'h1       
+#   APB_READ_DATA_OUT  integral             32    'h55555500
 #   begin_time         time                 64    545       
 #   end_time           time                 64    555       
 # ----------------------------------------------------------
 # 
-# UVM_INFO C:/questasim64_10.7c/verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1243) @ 745: reporter [TEST_DONE] All end-of-test objections have been dropped. Calling stop tasks
-# UVM_INFO C:/questasim64_10.7c/verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 745: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
-# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(101) @ 745: uvm_test_top.tb.apb_scb [apb_scoreboard] WRITE PASS EXP ADDR=0x80000303 DATA=0x55555555, ACT ADDR=0x80000303 DATA=0x55555555
-# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(123) @ 745: uvm_test_top.tb.apb_scb [apb_scoreboard] READ PASS ADDR=0x80000303 EXP=0x5500 ACT=0x5500
-# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(101) @ 745: uvm_test_top.tb.apb_scb [apb_scoreboard] WRITE PASS EXP ADDR=0x800000e4 DATA=0xffffffff, ACT ADDR=0x800000e4 DATA=0xffffffff
-# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(123) @ 745: uvm_test_top.tb.apb_scb [apb_scoreboard] READ PASS ADDR=0x800000e4 EXP=0xff0000ff ACT=0xff0000ff
-# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(101) @ 745: uvm_test_top.tb.apb_scb [apb_scoreboard] WRITE PASS EXP ADDR=0x198 DATA=0xaaaaaaaa, ACT ADDR=0x198 DATA=0xaaaaaaaa
-# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(123) @ 745: uvm_test_top.tb.apb_scb [apb_scoreboard] READ PASS ADDR=0x198 EXP=0xaa00 ACT=0xaa00
-# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(101) @ 745: uvm_test_top.tb.apb_scb [apb_scoreboard] WRITE PASS EXP ADDR=0x296 DATA=0x0, ACT ADDR=0x296 DATA=0x0
-# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(123) @ 745: uvm_test_top.tb.apb_scb [apb_scoreboard] READ PASS ADDR=0x296 EXP=0x0 ACT=0x0
-# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(101) @ 745: uvm_test_top.tb.apb_scb [apb_scoreboard] WRITE PASS EXP ADDR=0x80000315 DATA=0x8f018a0a, ACT ADDR=0x80000315 DATA=0x8f018a0a
-# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(123) @ 745: uvm_test_top.tb.apb_scb [apb_scoreboard] READ PASS ADDR=0x80000315 EXP=0x8f010000 ACT=0x8f010000
-# UVM_INFO .\TB\tb\apb_test_lib.sv(46) @ 745: uvm_test_top [apb_master_5_random_test] Check config usage at check phase
-# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(139) @ 745: uvm_test_top.tb.apb_scb [apb_scoreboard] Scoreboard Summary: Total=10 WR=5 RD=5 ERR=0
-# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(144) @ 745: uvm_test_top.tb.apb_scb [apb_scoreboard] Simulation PASSED ✅
-# UVM_INFO .\TB\sv\apb_master_monitor.sv(61) @ 745: uvm_test_top.tb.master_env.agent.monitor [apb_master_monitor] Report: APB Master Monitor observed 10 transactions
-# UVM_INFO .\TB\sv\apb_slave_monitor.sv(58) @ 745: uvm_test_top.tb.slave_env.agent.monitor [apb_slave_monitor] Report: APB Slave Monitor observed 10 transactions
+# [595][SLAVE-CONNECTOR][WRITE] ADDR=0x80000001 SELx=10 DATA_WRITE=0x99ebfb50
+# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(85) @ 605: uvm_test_top.tb.apb_scb [apb_scoreboard] [SB-SLAVE] Queued packet: PWRITE=1 ADDR=0x80000001 DATA=0x99ebfb50 PRDATA=0x55555500
+# UVM_INFO .\TB\sv\apb_slave_monitor.sv(52) @ 605: uvm_test_top.tb.slave_env.agent.monitor [apb_slave_monitor] Packet Collected :
+# ---------------------------------------------------
+# Name           Type                Size  Value     
+# ---------------------------------------------------
+# apb_slave_pkt  apb_slave_seq_item  -     @974      
+#   PSLVERR      integral            1     'h0X      
+#   PREADY       integral            1     'h0X      
+#   PRDATA       integral            32    'h55555500
+#   PENABLE      integral            1     'h0X      
+#   PWRITE       integral            1     'h1       
+#   PSELx        integral            2     'b10      
+#   PSTRB        integral            4     'b1000    
+#   PADDR        integral            32    'h80000001
+#   PWDATA       integral            32    'h99ebfb50
+#   begin_time   time                64    595       
+#   end_time     time                64    605       
+# ---------------------------------------------------
+# 
+# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(65) @ 605: uvm_test_top.tb.apb_scb [apb_scoreboard] [SB-MASTER-WRITE] ADDR=0x80000001 DATA=0x99ebfb50 STRB=1000 NEW_VAL=0x99005500
+# UVM_INFO .\TB\sv\apb_master_monitor.sv(55) @ 605: uvm_test_top.tb.master_env.agent.monitor [apb_master_monitor] Packet Collected :
+# ----------------------------------------------------------
+# Name                 Type                 Size  Value     
+# ----------------------------------------------------------
+# apb_master_pkt       apb_master_seq_item  -     @982      
+#   READ               integral             1     'h0       
+#   WRITE              integral             1     'h1       
+#   APB_WRITE_STRB     integral             4     'b1000    
+#   APB_WRITE_PADDR    integral             32    'h80000001
+#   APB_WRITE_DATA     integral             32    'h99ebfb50
+#   APB_READ_PADDR     integral             32    'h1       
+#   APB_READ_DATA_OUT  integral             32    'h55555500
+#   begin_time         time                 64    595       
+#   end_time           time                 64    605       
+# ----------------------------------------------------------
+# 
+# UVM_INFO .\TB\sv\apb_master_driver.sv(57) @ 645: uvm_test_top.tb.master_env.agent.driver [apb_master_driver] Read Data: 99005500
+# [645][SLAVE-CONNECTOR][READ] ADDR=0x80000001 SELx=10 DATA_OUT=0x99005500
+# UVM_INFO .\TB\sv\apb_master_driver.sv(52) @ 645: uvm_test_top.tb.master_env.agent.driver [apb_master_driver] Sending Packet :
+# ----------------------------------------------------------------------------------------------------------------------------------
+# Name                           Type                 Size  Value                                                                   
+# ----------------------------------------------------------------------------------------------------------------------------------
+# req                            apb_master_seq_item  -     @1002                                                                   
+#   READ                         integral             1     'h0X                                                                    
+#   WRITE                        integral             1     'h0X                                                                    
+#   APB_WRITE_STRB               integral             4     'b101                                                                   
+#   APB_WRITE_PADDR              integral             32    'h80000004                                                              
+#   APB_WRITE_DATA               integral             32    'ha9c31c1a                                                              
+#   APB_READ_PADDR               integral             32    'h80000004                                                              
+#   APB_READ_DATA_OUT            integral             32    'h0xxxxxxxx                                                             
+#   begin_time                   time                 64    645                                                                     
+#   depth                        int                  32    'd2                                                                     
+#   parent sequence (name)       string               29    apb_master_5_random_sequences                                           
+#   parent sequence (full name)  string               72    uvm_test_top.tb.master_env.agent.sequencer.apb_master_5_random_sequences
+#   sequencer                    string               42    uvm_test_top.tb.master_env.agent.sequencer                              
+# ----------------------------------------------------------------------------------------------------------------------------------
+# 
+# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(85) @ 655: uvm_test_top.tb.apb_scb [apb_scoreboard] [SB-SLAVE] Queued packet: PWRITE=0 ADDR=0x80000001 DATA=0x0 PRDATA=0x99005500
+# UVM_INFO .\TB\sv\apb_slave_monitor.sv(52) @ 655: uvm_test_top.tb.slave_env.agent.monitor [apb_slave_monitor] Packet Collected :
+# ---------------------------------------------------
+# Name           Type                Size  Value     
+# ---------------------------------------------------
+# apb_slave_pkt  apb_slave_seq_item  -     @990      
+#   PSLVERR      integral            1     'h0X      
+#   PREADY       integral            1     'h0X      
+#   PRDATA       integral            32    'h99005500
+#   PENABLE      integral            1     'h0X      
+#   PWRITE       integral            1     'h0       
+#   PSELx        integral            2     'b10      
+#   PSTRB        integral            4     'b0       
+#   PADDR        integral            32    'h80000001
+#   PWDATA       integral            32    'h0       
+#   begin_time   time                64    645       
+#   end_time     time                64    655       
+# ---------------------------------------------------
+# 
+# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(73) @ 655: uvm_test_top.tb.apb_scb [apb_scoreboard] [SB-MASTER-READ] ADDR=0x80000001
+# UVM_INFO .\TB\sv\apb_master_monitor.sv(55) @ 655: uvm_test_top.tb.master_env.agent.monitor [apb_master_monitor] Packet Collected :
+# ----------------------------------------------------------
+# Name                 Type                 Size  Value     
+# ----------------------------------------------------------
+# apb_master_pkt       apb_master_seq_item  -     @998      
+#   READ               integral             1     'h1       
+#   WRITE              integral             1     'h0       
+#   APB_WRITE_STRB     integral             4     'b0       
+#   APB_WRITE_PADDR    integral             32    'h80000001
+#   APB_WRITE_DATA     integral             32    'h99ebfb50
+#   APB_READ_PADDR     integral             32    'h80000001
+#   APB_READ_DATA_OUT  integral             32    'h99005500
+#   begin_time         time                 64    645       
+#   end_time           time                 64    655       
+# ----------------------------------------------------------
+# 
+# [685][SLAVE-CONNECTOR][WRITE] ADDR=0x80000004 SELx=10 DATA_WRITE=0xa9c31c1a
+# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(85) @ 695: uvm_test_top.tb.apb_scb [apb_scoreboard] [SB-SLAVE] Queued packet: PWRITE=1 ADDR=0x80000004 DATA=0xa9c31c1a PRDATA=0x99005500
+# UVM_INFO .\TB\sv\apb_slave_monitor.sv(52) @ 695: uvm_test_top.tb.slave_env.agent.monitor [apb_slave_monitor] Packet Collected :
+# ---------------------------------------------------
+# Name           Type                Size  Value     
+# ---------------------------------------------------
+# apb_slave_pkt  apb_slave_seq_item  -     @1010     
+#   PSLVERR      integral            1     'h0X      
+#   PREADY       integral            1     'h0X      
+#   PRDATA       integral            32    'h99005500
+#   PENABLE      integral            1     'h0X      
+#   PWRITE       integral            1     'h1       
+#   PSELx        integral            2     'b10      
+#   PSTRB        integral            4     'b101     
+#   PADDR        integral            32    'h80000004
+#   PWDATA       integral            32    'ha9c31c1a
+#   begin_time   time                64    685       
+#   end_time     time                64    695       
+# ---------------------------------------------------
+# 
+# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(65) @ 695: uvm_test_top.tb.apb_scb [apb_scoreboard] [SB-MASTER-WRITE] ADDR=0x80000004 DATA=0xa9c31c1a STRB=0101 NEW_VAL=0xc3001a
+# UVM_INFO .\TB\sv\apb_master_monitor.sv(55) @ 695: uvm_test_top.tb.master_env.agent.monitor [apb_master_monitor] Packet Collected :
+# ----------------------------------------------------------
+# Name                 Type                 Size  Value     
+# ----------------------------------------------------------
+# apb_master_pkt       apb_master_seq_item  -     @1018     
+#   READ               integral             1     'h0       
+#   WRITE              integral             1     'h1       
+#   APB_WRITE_STRB     integral             4     'b101     
+#   APB_WRITE_PADDR    integral             32    'h80000004
+#   APB_WRITE_DATA     integral             32    'ha9c31c1a
+#   APB_READ_PADDR     integral             32    'h80000001
+#   APB_READ_DATA_OUT  integral             32    'h99005500
+#   begin_time         time                 64    685       
+#   end_time           time                 64    695       
+# ----------------------------------------------------------
+# 
+# UVM_INFO .\TB\sv\apb_master_driver.sv(57) @ 725: uvm_test_top.tb.master_env.agent.driver [apb_master_driver] Read Data: c3001a
+# [725][SLAVE-CONNECTOR][READ] ADDR=0x80000004 SELx=10 DATA_OUT=0xc3001a
+# UVM_INFO .\TB\sv\apb_master_driver.sv(52) @ 725: uvm_test_top.tb.master_env.agent.driver [apb_master_driver] Sending Packet :
+# ----------------------------------------------------------------------------------------------------------------------------------
+# Name                           Type                 Size  Value                                                                   
+# ----------------------------------------------------------------------------------------------------------------------------------
+# req                            apb_master_seq_item  -     @1038                                                                   
+#   READ                         integral             1     'h0X                                                                    
+#   WRITE                        integral             1     'h0X                                                                    
+#   APB_WRITE_STRB               integral             4     'b100                                                                   
+#   APB_WRITE_PADDR              integral             32    'h80000004                                                              
+#   APB_WRITE_DATA               integral             32    'hffffffff                                                              
+#   APB_READ_PADDR               integral             32    'h80000004                                                              
+#   APB_READ_DATA_OUT            integral             32    'h0xxxxxxxx                                                             
+#   begin_time                   time                 64    725                                                                     
+#   depth                        int                  32    'd2                                                                     
+#   parent sequence (name)       string               29    apb_master_5_random_sequences                                           
+#   parent sequence (full name)  string               72    uvm_test_top.tb.master_env.agent.sequencer.apb_master_5_random_sequences
+#   sequencer                    string               42    uvm_test_top.tb.master_env.agent.sequencer                              
+# ----------------------------------------------------------------------------------------------------------------------------------
+# 
+# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(85) @ 735: uvm_test_top.tb.apb_scb [apb_scoreboard] [SB-SLAVE] Queued packet: PWRITE=0 ADDR=0x80000004 DATA=0x0 PRDATA=0xc3001a
+# UVM_INFO .\TB\sv\apb_slave_monitor.sv(52) @ 735: uvm_test_top.tb.slave_env.agent.monitor [apb_slave_monitor] Packet Collected :
+# ---------------------------------------------------
+# Name           Type                Size  Value     
+# ---------------------------------------------------
+# apb_slave_pkt  apb_slave_seq_item  -     @1026     
+#   PSLVERR      integral            1     'h0X      
+#   PREADY       integral            1     'h0X      
+#   PRDATA       integral            32    'hc3001a  
+#   PENABLE      integral            1     'h0X      
+#   PWRITE       integral            1     'h0       
+#   PSELx        integral            2     'b10      
+#   PSTRB        integral            4     'b0       
+#   PADDR        integral            32    'h80000004
+#   PWDATA       integral            32    'h0       
+#   begin_time   time                64    725       
+#   end_time     time                64    735       
+# ---------------------------------------------------
+# 
+# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(73) @ 735: uvm_test_top.tb.apb_scb [apb_scoreboard] [SB-MASTER-READ] ADDR=0x80000004
+# UVM_INFO .\TB\sv\apb_master_monitor.sv(55) @ 735: uvm_test_top.tb.master_env.agent.monitor [apb_master_monitor] Packet Collected :
+# ----------------------------------------------------------
+# Name                 Type                 Size  Value     
+# ----------------------------------------------------------
+# apb_master_pkt       apb_master_seq_item  -     @1034     
+#   READ               integral             1     'h1       
+#   WRITE              integral             1     'h0       
+#   APB_WRITE_STRB     integral             4     'b0       
+#   APB_WRITE_PADDR    integral             32    'h80000004
+#   APB_WRITE_DATA     integral             32    'ha9c31c1a
+#   APB_READ_PADDR     integral             32    'h80000004
+#   APB_READ_DATA_OUT  integral             32    'hc3001a  
+#   begin_time         time                 64    725       
+#   end_time           time                 64    735       
+# ----------------------------------------------------------
+# 
+# [765][SLAVE-CONNECTOR][WRITE] ADDR=0x80000004 SELx=10 DATA_WRITE=0xffffffff
+# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(85) @ 775: uvm_test_top.tb.apb_scb [apb_scoreboard] [SB-SLAVE] Queued packet: PWRITE=1 ADDR=0x80000004 DATA=0xffffffff PRDATA=0xc3001a
+# UVM_INFO .\TB\sv\apb_slave_monitor.sv(52) @ 775: uvm_test_top.tb.slave_env.agent.monitor [apb_slave_monitor] Packet Collected :
+# ---------------------------------------------------
+# Name           Type                Size  Value     
+# ---------------------------------------------------
+# apb_slave_pkt  apb_slave_seq_item  -     @1046     
+#   PSLVERR      integral            1     'h0X      
+#   PREADY       integral            1     'h0X      
+#   PRDATA       integral            32    'hc3001a  
+#   PENABLE      integral            1     'h0X      
+#   PWRITE       integral            1     'h1       
+#   PSELx        integral            2     'b10      
+#   PSTRB        integral            4     'b100     
+#   PADDR        integral            32    'h80000004
+#   PWDATA       integral            32    'hffffffff
+#   begin_time   time                64    765       
+#   end_time     time                64    775       
+# ---------------------------------------------------
+# 
+# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(65) @ 775: uvm_test_top.tb.apb_scb [apb_scoreboard] [SB-MASTER-WRITE] ADDR=0x80000004 DATA=0xffffffff STRB=0100 NEW_VAL=0xff001a
+# UVM_INFO .\TB\sv\apb_master_monitor.sv(55) @ 775: uvm_test_top.tb.master_env.agent.monitor [apb_master_monitor] Packet Collected :
+# ----------------------------------------------------------
+# Name                 Type                 Size  Value     
+# ----------------------------------------------------------
+# apb_master_pkt       apb_master_seq_item  -     @1054     
+#   READ               integral             1     'h0       
+#   WRITE              integral             1     'h1       
+#   APB_WRITE_STRB     integral             4     'b100     
+#   APB_WRITE_PADDR    integral             32    'h80000004
+#   APB_WRITE_DATA     integral             32    'hffffffff
+#   APB_READ_PADDR     integral             32    'h80000004
+#   APB_READ_DATA_OUT  integral             32    'hc3001a  
+#   begin_time         time                 64    765       
+#   end_time           time                 64    775       
+# ----------------------------------------------------------
+# 
+# UVM_INFO .\TB\sv\apb_master_driver.sv(57) @ 805: uvm_test_top.tb.master_env.agent.driver [apb_master_driver] Read Data: ff001a
+# [805][SLAVE-CONNECTOR][READ] ADDR=0x80000004 SELx=10 DATA_OUT=0xff001a
+# UVM_INFO .\TB\sv\apb_master_driver.sv(52) @ 805: uvm_test_top.tb.master_env.agent.driver [apb_master_driver] Sending Packet :
+# ----------------------------------------------------------------------------------------------------------------------------------
+# Name                           Type                 Size  Value                                                                   
+# ----------------------------------------------------------------------------------------------------------------------------------
+# req                            apb_master_seq_item  -     @1074                                                                   
+#   READ                         integral             1     'h0X                                                                    
+#   WRITE                        integral             1     'h0X                                                                    
+#   APB_WRITE_STRB               integral             4     'b1101                                                                  
+#   APB_WRITE_PADDR              integral             32    'h8                                                                     
+#   APB_WRITE_DATA               integral             32    'haaaaaaaa                                                              
+#   APB_READ_PADDR               integral             32    'h8                                                                     
+#   APB_READ_DATA_OUT            integral             32    'h0xxxxxxxx                                                             
+#   begin_time                   time                 64    805                                                                     
+#   depth                        int                  32    'd2                                                                     
+#   parent sequence (name)       string               29    apb_master_5_random_sequences                                           
+#   parent sequence (full name)  string               72    uvm_test_top.tb.master_env.agent.sequencer.apb_master_5_random_sequences
+#   sequencer                    string               42    uvm_test_top.tb.master_env.agent.sequencer                              
+# ----------------------------------------------------------------------------------------------------------------------------------
+# 
+# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(85) @ 815: uvm_test_top.tb.apb_scb [apb_scoreboard] [SB-SLAVE] Queued packet: PWRITE=0 ADDR=0x80000004 DATA=0x0 PRDATA=0xff001a
+# UVM_INFO .\TB\sv\apb_slave_monitor.sv(52) @ 815: uvm_test_top.tb.slave_env.agent.monitor [apb_slave_monitor] Packet Collected :
+# ---------------------------------------------------
+# Name           Type                Size  Value     
+# ---------------------------------------------------
+# apb_slave_pkt  apb_slave_seq_item  -     @1062     
+#   PSLVERR      integral            1     'h0X      
+#   PREADY       integral            1     'h0X      
+#   PRDATA       integral            32    'hff001a  
+#   PENABLE      integral            1     'h0X      
+#   PWRITE       integral            1     'h0       
+#   PSELx        integral            2     'b10      
+#   PSTRB        integral            4     'b0       
+#   PADDR        integral            32    'h80000004
+#   PWDATA       integral            32    'h0       
+#   begin_time   time                64    805       
+#   end_time     time                64    815       
+# ---------------------------------------------------
+# 
+# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(73) @ 815: uvm_test_top.tb.apb_scb [apb_scoreboard] [SB-MASTER-READ] ADDR=0x80000004
+# UVM_INFO .\TB\sv\apb_master_monitor.sv(55) @ 815: uvm_test_top.tb.master_env.agent.monitor [apb_master_monitor] Packet Collected :
+# ----------------------------------------------------------
+# Name                 Type                 Size  Value     
+# ----------------------------------------------------------
+# apb_master_pkt       apb_master_seq_item  -     @1070     
+#   READ               integral             1     'h1       
+#   WRITE              integral             1     'h0       
+#   APB_WRITE_STRB     integral             4     'b0       
+#   APB_WRITE_PADDR    integral             32    'h80000004
+#   APB_WRITE_DATA     integral             32    'hffffffff
+#   APB_READ_PADDR     integral             32    'h80000004
+#   APB_READ_DATA_OUT  integral             32    'hff001a  
+#   begin_time         time                 64    805       
+#   end_time           time                 64    815       
+# ----------------------------------------------------------
+# 
+# [845][SLAVE-CONNECTOR][WRITE] ADDR=0x8 SELx=01 DATA_WRITE=0xaaaaaaaa
+# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(85) @ 855: uvm_test_top.tb.apb_scb [apb_scoreboard] [SB-SLAVE] Queued packet: PWRITE=1 ADDR=0x8 DATA=0xaaaaaaaa PRDATA=0xff001a
+# UVM_INFO .\TB\sv\apb_slave_monitor.sv(52) @ 855: uvm_test_top.tb.slave_env.agent.monitor [apb_slave_monitor] Packet Collected :
+# ---------------------------------------------------
+# Name           Type                Size  Value     
+# ---------------------------------------------------
+# apb_slave_pkt  apb_slave_seq_item  -     @1082     
+#   PSLVERR      integral            1     'h0X      
+#   PREADY       integral            1     'h0X      
+#   PRDATA       integral            32    'hff001a  
+#   PENABLE      integral            1     'h0X      
+#   PWRITE       integral            1     'h1       
+#   PSELx        integral            2     'b1       
+#   PSTRB        integral            4     'b1101    
+#   PADDR        integral            32    'h8       
+#   PWDATA       integral            32    'haaaaaaaa
+#   begin_time   time                64    845       
+#   end_time     time                64    855       
+# ---------------------------------------------------
+# 
+# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(65) @ 855: uvm_test_top.tb.apb_scb [apb_scoreboard] [SB-MASTER-WRITE] ADDR=0x8 DATA=0xaaaaaaaa STRB=1101 NEW_VAL=0xaaaa00aa
+# UVM_INFO .\TB\sv\apb_master_monitor.sv(55) @ 855: uvm_test_top.tb.master_env.agent.monitor [apb_master_monitor] Packet Collected :
+# ----------------------------------------------------------
+# Name                 Type                 Size  Value     
+# ----------------------------------------------------------
+# apb_master_pkt       apb_master_seq_item  -     @1090     
+#   READ               integral             1     'h0       
+#   WRITE              integral             1     'h1       
+#   APB_WRITE_STRB     integral             4     'b1101    
+#   APB_WRITE_PADDR    integral             32    'h8       
+#   APB_WRITE_DATA     integral             32    'haaaaaaaa
+#   APB_READ_PADDR     integral             32    'h80000004
+#   APB_READ_DATA_OUT  integral             32    'hff001a  
+#   begin_time         time                 64    845       
+#   end_time           time                 64    855       
+# ----------------------------------------------------------
+# 
+# UVM_INFO .\TB\sv\apb_master_driver.sv(57) @ 885: uvm_test_top.tb.master_env.agent.driver [apb_master_driver] Read Data: aaaa00aa
+# [885][SLAVE-CONNECTOR][READ] ADDR=0x8 SELx=01 DATA_OUT=0xaaaa00aa
+# UVM_INFO .\TB\sv\apb_master_sequences.sv(36) @ 885: uvm_test_top.tb.master_env.agent.sequencer@@apb_master_5_random_sequences [apb_master_5_random_sequences] drop objection
+# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(85) @ 895: uvm_test_top.tb.apb_scb [apb_scoreboard] [SB-SLAVE] Queued packet: PWRITE=0 ADDR=0x8 DATA=0x0 PRDATA=0xaaaa00aa
+# UVM_INFO .\TB\sv\apb_slave_monitor.sv(52) @ 895: uvm_test_top.tb.slave_env.agent.monitor [apb_slave_monitor] Packet Collected :
+# ---------------------------------------------------
+# Name           Type                Size  Value     
+# ---------------------------------------------------
+# apb_slave_pkt  apb_slave_seq_item  -     @1098     
+#   PSLVERR      integral            1     'h0X      
+#   PREADY       integral            1     'h0X      
+#   PRDATA       integral            32    'haaaa00aa
+#   PENABLE      integral            1     'h0X      
+#   PWRITE       integral            1     'h0       
+#   PSELx        integral            2     'b1       
+#   PSTRB        integral            4     'b0       
+#   PADDR        integral            32    'h8       
+#   PWDATA       integral            32    'h0       
+#   begin_time   time                64    885       
+#   end_time     time                64    895       
+# ---------------------------------------------------
+# 
+# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(73) @ 895: uvm_test_top.tb.apb_scb [apb_scoreboard] [SB-MASTER-READ] ADDR=0x8
+# UVM_INFO .\TB\sv\apb_master_monitor.sv(55) @ 895: uvm_test_top.tb.master_env.agent.monitor [apb_master_monitor] Packet Collected :
+# ----------------------------------------------------------
+# Name                 Type                 Size  Value     
+# ----------------------------------------------------------
+# apb_master_pkt       apb_master_seq_item  -     @1106     
+#   READ               integral             1     'h1       
+#   WRITE              integral             1     'h0       
+#   APB_WRITE_STRB     integral             4     'b0       
+#   APB_WRITE_PADDR    integral             32    'h8       
+#   APB_WRITE_DATA     integral             32    'haaaaaaaa
+#   APB_READ_PADDR     integral             32    'h8       
+#   APB_READ_DATA_OUT  integral             32    'haaaa00aa
+#   begin_time         time                 64    885       
+#   end_time           time                 64    895       
+# ----------------------------------------------------------
+# 
+# UVM_INFO C:/questasim64_10.7c/verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1243) @ 1085: reporter [TEST_DONE] All end-of-test objections have been dropped. Calling stop tasks
+# UVM_INFO C:/questasim64_10.7c/verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 1085: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(101) @ 1085: uvm_test_top.tb.apb_scb [apb_scoreboard] WRITE PASS EXP ADDR=0x80000001 DATA=0x55555555, ACT ADDR=0x80000001 DATA=0x55555555
+# UVM_ERROR .\TB\tb\..\sv\apb_scoreboard.sv(129) @ 1085: uvm_test_top.tb.apb_scb [apb_scoreboard] READ FAIL ADDR=0x80000001 EXP=0x99005500 ACT=0x5500
+# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(101) @ 1085: uvm_test_top.tb.apb_scb [apb_scoreboard] WRITE PASS EXP ADDR=0x4 DATA=0xffffffff, ACT ADDR=0x4 DATA=0xffffffff
+# UVM_ERROR .\TB\tb\..\sv\apb_scoreboard.sv(129) @ 1085: uvm_test_top.tb.apb_scb [apb_scoreboard] READ FAIL ADDR=0x4 EXP=0xaaff ACT=0xff0000ff
+# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(101) @ 1085: uvm_test_top.tb.apb_scb [apb_scoreboard] WRITE PASS EXP ADDR=0x4 DATA=0xaaaaaaaa, ACT ADDR=0x4 DATA=0xaaaaaaaa
+# UVM_ERROR .\TB\tb\..\sv\apb_scoreboard.sv(129) @ 1085: uvm_test_top.tb.apb_scb [apb_scoreboard] READ FAIL ADDR=0x4 EXP=0xaaff ACT=0xff00aaff
+# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(101) @ 1085: uvm_test_top.tb.apb_scb [apb_scoreboard] WRITE PASS EXP ADDR=0x4 DATA=0x0, ACT ADDR=0x4 DATA=0x0
+# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(123) @ 1085: uvm_test_top.tb.apb_scb [apb_scoreboard] READ PASS ADDR=0x4 EXP=0xaaff ACT=0xaaff
+# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(101) @ 1085: uvm_test_top.tb.apb_scb [apb_scoreboard] WRITE PASS EXP ADDR=0x8 DATA=0x8f018a0a, ACT ADDR=0x8 DATA=0x8f018a0a
+# UVM_ERROR .\TB\tb\..\sv\apb_scoreboard.sv(129) @ 1085: uvm_test_top.tb.apb_scb [apb_scoreboard] READ FAIL ADDR=0x8 EXP=0xaaaa00aa ACT=0x8f010000
+# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(101) @ 1085: uvm_test_top.tb.apb_scb [apb_scoreboard] WRITE PASS EXP ADDR=0x1 DATA=0x55555555, ACT ADDR=0x1 DATA=0x55555555
+# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(123) @ 1085: uvm_test_top.tb.apb_scb [apb_scoreboard] READ PASS ADDR=0x1 EXP=0x55555500 ACT=0x55555500
+# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(101) @ 1085: uvm_test_top.tb.apb_scb [apb_scoreboard] WRITE PASS EXP ADDR=0x80000001 DATA=0x99ebfb50, ACT ADDR=0x80000001 DATA=0x99ebfb50
+# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(123) @ 1085: uvm_test_top.tb.apb_scb [apb_scoreboard] READ PASS ADDR=0x80000001 EXP=0x99005500 ACT=0x99005500
+# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(101) @ 1085: uvm_test_top.tb.apb_scb [apb_scoreboard] WRITE PASS EXP ADDR=0x80000004 DATA=0xa9c31c1a, ACT ADDR=0x80000004 DATA=0xa9c31c1a
+# UVM_ERROR .\TB\tb\..\sv\apb_scoreboard.sv(129) @ 1085: uvm_test_top.tb.apb_scb [apb_scoreboard] READ FAIL ADDR=0x80000004 EXP=0xff001a ACT=0xc3001a
+# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(101) @ 1085: uvm_test_top.tb.apb_scb [apb_scoreboard] WRITE PASS EXP ADDR=0x80000004 DATA=0xffffffff, ACT ADDR=0x80000004 DATA=0xffffffff
+# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(123) @ 1085: uvm_test_top.tb.apb_scb [apb_scoreboard] READ PASS ADDR=0x80000004 EXP=0xff001a ACT=0xff001a
+# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(101) @ 1085: uvm_test_top.tb.apb_scb [apb_scoreboard] WRITE PASS EXP ADDR=0x8 DATA=0xaaaaaaaa, ACT ADDR=0x8 DATA=0xaaaaaaaa
+# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(123) @ 1085: uvm_test_top.tb.apb_scb [apb_scoreboard] READ PASS ADDR=0x8 EXP=0xaaaa00aa ACT=0xaaaa00aa
+# UVM_INFO .\TB\tb\apb_test_lib.sv(46) @ 1085: uvm_test_top [apb_master_5_random_test] Check config usage at check phase
+# UVM_INFO .\TB\tb\..\sv\apb_scoreboard.sv(139) @ 1085: uvm_test_top.tb.apb_scb [apb_scoreboard] Scoreboard Summary: Total=20 WR=10 RD=10 ERR=5
+# UVM_ERROR .\TB\tb\..\sv\apb_scoreboard.sv(146) @ 1085: uvm_test_top.tb.apb_scb [apb_scoreboard] Simulation FAILED ❌
+# UVM_INFO .\TB\sv\apb_master_monitor.sv(61) @ 1085: uvm_test_top.tb.master_env.agent.monitor [apb_master_monitor] Report: APB Master Monitor observed 20 transactions
+# UVM_INFO .\TB\sv\apb_slave_monitor.sv(58) @ 1085: uvm_test_top.tb.slave_env.agent.monitor [apb_slave_monitor] Report: APB Slave Monitor observed 20 transactions
 # 
 # --- UVM Report Summary ---
 # 
 # ** Report counts by severity
-# UVM_INFO :  110
+# UVM_INFO :  164
 # UVM_WARNING :    0
-# UVM_ERROR :    0
+# UVM_ERROR :    6
 # UVM_FATAL :    0
 # ** Report counts by id
 # [CFG]     2
@@ -618,25 +1098,25 @@
 # [apb_master_5_random_sequences]     3
 # [apb_master_5_random_test]     6
 # [apb_master_agent]     2
-# [apb_master_driver]    14
+# [apb_master_driver]    24
 # [apb_master_env]     1
-# [apb_master_monitor]    13
-# [apb_scoreboard]    32
+# [apb_master_monitor]    23
+# [apb_scoreboard]    62
 # [apb_slave_agent]     1
 # [apb_slave_env]     1
-# [apb_slave_monitor]    13
+# [apb_slave_monitor]    23
 # [apb_tb]     4
 # ** Note: $finish    : C:/questasim64_10.7c/verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
-#    Time: 745 ns  Iteration: 53  Instance: /tb_apb_top
+#    Time: 1085 ns  Iteration: 53  Instance: /tb_apb_top
 # Break in Task std/mailbox::get at C:/questasim64_10.7c/win64/../verilog_src/std/std.sv line 41
 #  coverage save -onexit ./cov_out/apb_master_5_random_test.ucdb
 #  quit -sim
 # Saving coverage database on exit...
-# End time: 23:38:44 on Aug 21,2026, Elapsed time: 0:00:08
+# End time: 11:55:17 on Aug 22,2026, Elapsed time: 0:00:07
 # Errors: 0, Warnings: 0
 # 
 # vsim -c -coverage -wlf ./wlf_out/apb_master_full_strobes_test.wlf work.tb_apb_top "+SVSEED=random" "+UVM_TESTNAME=apb_master_full_strobes_test" "+UVM_VERBOSITY=UVM_FULL" "+UVM_TR_RECORD" -onfinish final -do "transcript file ./logs/apb_master_full_strobes_test.log; log -r /*; run -all; coverage save -onexit ./cov_out/apb_master_full_strobes_test.ucdb; quit -sim;" -debugDB 
-# Start time: 23:38:44 on Aug 21,2026
+# Start time: 11:55:17 on Aug 22,2026
 # ** Note: (vsim-8009) Loading existing optimized design _opt
 # Loading sv_std.std
 # Loading work.apb_if(fast)

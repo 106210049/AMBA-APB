@@ -169,3 +169,38 @@ class apb_master_full_strobes_test extends apb_test_lib;
         super.build_phase(phase);
     endfunction: build_phase
 endclass: apb_master_full_strobes_test
+
+class apb_master_zero_stobes_test extends apb_test_lib;
+    `uvm_component_utils(apb_master_zero_stobes_test)
+
+    //  Constructor: new
+    function new(string name = "apb_master_zero_stobes_test", uvm_component parent);
+        super.new(name, parent);
+    endfunction: new
+
+    virtual function void build_phase(uvm_phase phase);
+        uvm_config_wrapper::set(this, 
+                                "tb.master_env.agent.sequencer.run_phase", 
+                                "default_sequence", 
+                                apb_master_zero_strobes_sequences::get_type());
+        super.build_phase(phase);
+    endfunction: build_phase
+endclass: apb_master_zero_stobes_test
+
+class apb_master_sequence_trans_test extends apb_test_lib;
+    `uvm_component_utils(apb_master_sequence_trans_test)
+
+    //  Constructor: new
+    function new(string name = "apb_master_sequence_trans_test", uvm_component parent);
+        super.new(name, parent);
+    endfunction: new
+
+    virtual function void build_phase(uvm_phase phase);
+        set_type_override_by_type(apb_master_driver::get_type(), apb_master_5_transfer_driver::get_type());
+        uvm_config_wrapper::set(this, 
+                                "tb.master_env.agent.sequencer.run_phase", 
+                                "default_sequence", 
+                                apb_master_5_random_sequences::get_type());
+        super.build_phase(phase);
+    endfunction: build_phase
+endclass: apb_master_sequence_trans_test

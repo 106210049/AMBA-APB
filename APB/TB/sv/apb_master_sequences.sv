@@ -116,8 +116,8 @@ class apb_master_5_random_sequences extends apb_master_sequences;
     // req.address_c.constraint_mode(0); // disable constraint
     task body();
         `uvm_info(get_type_name(), "Executing apb_master_5_random_sequences", UVM_LOW)
-        repeat(5)
-            `uvm_do(req);
+        repeat(10)
+            `uvm_do_with(req, {req.APB_READ_PADDR inside {32'h8000_0001, 32'h0000_00001, 32'h0000_0004, 32'h8000_0004, 32'h0000_0008};});
     endtask: body
 endclass: apb_master_5_random_sequences
 
@@ -133,3 +133,16 @@ class apb_master_full_strobes_sequences extends apb_master_sequences;
         `uvm_do_with(req, {req.APB_WRITE_STRB == 4'b1111;})
     endtask: body
 endclass: apb_master_full_strobes_sequences
+
+class apb_master_zero_strobes_sequences extends apb_master_sequences;
+    `uvm_object_utils(apb_master_zero_strobes_sequences);
+
+    function new(string name = "apb_master_zero_strobes_sequences");
+        super.new(name);
+    endfunction: new
+    // req.address_c.constraint_mode(0); // disable constraint
+    task body();
+        `uvm_info(get_type_name(), "Executing apb_master_zero_strobes_sequences", UVM_LOW)
+        `uvm_do_with(req, {req.APB_WRITE_STRB == 4'b1111;})
+    endtask: body
+endclass: apb_master_zero_strobes_sequences

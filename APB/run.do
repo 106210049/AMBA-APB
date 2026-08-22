@@ -36,6 +36,7 @@ set TESTS {
     apb_master_error_response_test
     apb_master_5_random_test
     apb_master_full_strobes_test
+    apb_master_zero_stobes_test
 }
 
 # Chạy từng test
