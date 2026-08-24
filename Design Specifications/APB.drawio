@@ -6285,7 +6285,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="ONpJ8LSIHrpjoZ1nrMOS" name="Master Driver Flow Chart">
-    <mxGraphModel dx="1705" dy="922" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="899" dy="1300" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -6325,7 +6325,7 @@
         <mxCell id="8JGV5Y9OD40oxYmstzxj-15" edge="1" parent="zJOwzpqoJ7E1t4mHxYP1-1" source="8JGV5Y9OD40oxYmstzxj-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="8JGV5Y9OD40oxYmstzxj-14" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="8JGV5Y9OD40oxYmstzxj-11" parent="zJOwzpqoJ7E1t4mHxYP1-1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Get item from Sequencer" vertex="1">
+        <mxCell id="8JGV5Y9OD40oxYmstzxj-11" parent="zJOwzpqoJ7E1t4mHxYP1-1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Get item from Sequencer" vertex="1">
           <mxGeometry height="40" width="200" x="240" y="200" as="geometry" />
         </mxCell>
         <mxCell id="8JGV5Y9OD40oxYmstzxj-19" edge="1" parent="zJOwzpqoJ7E1t4mHxYP1-1" source="8JGV5Y9OD40oxYmstzxj-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" value="">
@@ -6391,7 +6391,7 @@
         <mxCell id="8JGV5Y9OD40oxYmstzxj-36" parent="zJOwzpqoJ7E1t4mHxYP1-1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;fontStyle=1" value="seq_item != null" vertex="1">
           <mxGeometry height="80" width="200" x="240" y="520" as="geometry" />
         </mxCell>
-        <mxCell id="8JGV5Y9OD40oxYmstzxj-39" parent="zJOwzpqoJ7E1t4mHxYP1-1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#f8cecc;strokeColor=#b85450;" value="end Run Phase" vertex="1">
+        <mxCell id="8JGV5Y9OD40oxYmstzxj-39" parent="zJOwzpqoJ7E1t4mHxYP1-1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="end Run Phase" vertex="1">
           <mxGeometry height="40" width="200" x="240" y="640" as="geometry" />
         </mxCell>
         <mxCell id="8JGV5Y9OD40oxYmstzxj-41" parent="zJOwzpqoJ7E1t4mHxYP1-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=1" value="Yes" vertex="1">
@@ -6404,7 +6404,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="ocR-vb_5MyoXYb_o_lkh" name="Master Monitor Flow chart">
-    <mxGraphModel dx="637" dy="921" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="899" dy="1300" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -6514,10 +6514,76 @@
     </mxGraphModel>
   </diagram>
   <diagram id="gEhJI-Uam8yASD4V3_pI" name="Slave Monitor Flow chart">
-    <mxGraphModel dx="2046" dy="1106" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="764" dy="1105" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="LzMAyBNXRRkoRwd-ttxu-1" edge="1" parent="1" source="LzMAyBNXRRkoRwd-ttxu-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="LzMAyBNXRRkoRwd-ttxu-4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LzMAyBNXRRkoRwd-ttxu-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Start Run Phase" vertex="1">
+          <mxGeometry height="40" width="200" x="360" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="LzMAyBNXRRkoRwd-ttxu-3" edge="1" parent="1" source="LzMAyBNXRRkoRwd-ttxu-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="LzMAyBNXRRkoRwd-ttxu-9" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LzMAyBNXRRkoRwd-ttxu-4" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;fontStyle=1" value="Wait for Reset dessert" vertex="1">
+          <mxGeometry height="50" width="200" x="360" y="175" as="geometry" />
+        </mxCell>
+        <mxCell id="LzMAyBNXRRkoRwd-ttxu-5" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="560" y="199.82999999999998" as="sourcePoint" />
+            <mxPoint x="600" y="199.82999999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LzMAyBNXRRkoRwd-ttxu-6" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="600" y="200" as="sourcePoint" />
+            <mxPoint x="600" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LzMAyBNXRRkoRwd-ttxu-7" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="600" y="140" as="sourcePoint" />
+            <mxPoint x="460" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LzMAyBNXRRkoRwd-ttxu-8" edge="1" parent="1" source="LzMAyBNXRRkoRwd-ttxu-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="LzMAyBNXRRkoRwd-ttxu-10" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LzMAyBNXRRkoRwd-ttxu-9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Create apb_slave_seq_item objets" vertex="1">
+          <mxGeometry height="40" width="200" x="360" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="LzMAyBNXRRkoRwd-ttxu-14" edge="1" parent="1" source="LzMAyBNXRRkoRwd-ttxu-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="LzMAyBNXRRkoRwd-ttxu-13" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LzMAyBNXRRkoRwd-ttxu-10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Wait for PREADY signal" vertex="1">
+          <mxGeometry height="40" width="200" x="360" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="LzMAyBNXRRkoRwd-ttxu-16" edge="1" parent="1" source="LzMAyBNXRRkoRwd-ttxu-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="LzMAyBNXRRkoRwd-ttxu-15" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LzMAyBNXRRkoRwd-ttxu-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="&lt;ul&gt;&lt;li&gt;SELx = tb_apb_top.uut.PSELx&lt;/li&gt;&lt;li&gt;WRITE_EN = tb_apb_top.uut.PWRITE;&lt;/li&gt;&lt;li&gt;ADDR = tb_apb_top.uut.PADDR;&lt;/li&gt;&lt;li&gt;WRITE_STROBES = tb_apb_top.uut.PSTRB;&lt;/li&gt;&lt;li&gt;DATA_WRITE = tb_apb_top.uut.PWDATA;&lt;/li&gt;&lt;/ul&gt;" vertex="1">
+          <mxGeometry height="120" width="280" x="320" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="LzMAyBNXRRkoRwd-ttxu-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" value="Capture DUT signals" vertex="1">
+          <mxGeometry height="30" width="280" x="320" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="LzMAyBNXRRkoRwd-ttxu-18" edge="1" parent="1" source="LzMAyBNXRRkoRwd-ttxu-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="LzMAyBNXRRkoRwd-ttxu-17" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LzMAyBNXRRkoRwd-ttxu-20" edge="1" parent="1" source="LzMAyBNXRRkoRwd-ttxu-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="LzMAyBNXRRkoRwd-ttxu-19" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LzMAyBNXRRkoRwd-ttxu-15" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;fontStyle=1" value="WRITE_EN" vertex="1">
+          <mxGeometry height="60" width="200" x="360" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="LzMAyBNXRRkoRwd-ttxu-17" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1" value="DATA_OUT = PRDATA_bus&lt;br&gt;Display READ info" vertex="1">
+          <mxGeometry height="80" width="160" x="160" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="LzMAyBNXRRkoRwd-ttxu-19" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1" value="Display WRITE info" vertex="1">
+          <mxGeometry height="80" width="160" x="600" y="640" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
