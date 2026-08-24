@@ -6285,20 +6285,20 @@
     </mxGraphModel>
   </diagram>
   <diagram id="ONpJ8LSIHrpjoZ1nrMOS" name="Master Driver Flow Chart">
-    <mxGraphModel dx="527" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1705" dy="922" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="8JGV5Y9OD40oxYmstzxj-4" edge="1" parent="1" source="8JGV5Y9OD40oxYmstzxj-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="8JGV5Y9OD40oxYmstzxj-3" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="8JGV5Y9OD40oxYmstzxj-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Start Run Phase" vertex="1">
+        <mxCell id="8JGV5Y9OD40oxYmstzxj-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1" value="Start Run Phase" vertex="1">
           <mxGeometry height="40" width="200" x="320" y="80" as="geometry" />
         </mxCell>
         <mxCell id="8JGV5Y9OD40oxYmstzxj-12" edge="1" parent="1" source="8JGV5Y9OD40oxYmstzxj-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="8JGV5Y9OD40oxYmstzxj-11" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="8JGV5Y9OD40oxYmstzxj-3" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="Wait for Reset dessert" vertex="1">
+        <mxCell id="8JGV5Y9OD40oxYmstzxj-3" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;fontStyle=1" value="Wait for Reset dessert" vertex="1">
           <mxGeometry height="50" width="200" x="320" y="175" as="geometry" />
         </mxCell>
         <mxCell id="8JGV5Y9OD40oxYmstzxj-6" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
@@ -6322,7 +6322,7 @@
         <mxCell id="8JGV5Y9OD40oxYmstzxj-15" edge="1" parent="1" source="8JGV5Y9OD40oxYmstzxj-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="8JGV5Y9OD40oxYmstzxj-14" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="8JGV5Y9OD40oxYmstzxj-11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Get item from Sequencer" vertex="1">
+        <mxCell id="8JGV5Y9OD40oxYmstzxj-11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1" value="Get item from Sequencer" vertex="1">
           <mxGeometry height="40" width="200" x="320" y="280" as="geometry" />
         </mxCell>
         <mxCell id="8JGV5Y9OD40oxYmstzxj-19" edge="1" parent="1" source="8JGV5Y9OD40oxYmstzxj-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" value="">
@@ -6333,7 +6333,7 @@
         <mxCell id="8JGV5Y9OD40oxYmstzxj-26" edge="1" parent="1" source="8JGV5Y9OD40oxYmstzxj-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="8JGV5Y9OD40oxYmstzxj-24">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="8JGV5Y9OD40oxYmstzxj-14" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="Write Transfer ?" vertex="1">
+        <mxCell id="8JGV5Y9OD40oxYmstzxj-14" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;fontStyle=1" value="Write Transfer ?" vertex="1">
           <mxGeometry height="50" width="200" x="320" y="375" as="geometry" />
         </mxCell>
         <mxCell id="8JGV5Y9OD40oxYmstzxj-22" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;&quot;&gt;TRANS = 1, WRITE = 1&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;&quot;&gt;Set WRITE_ADDR, STRB, WRITE_DATA,&lt;/span&gt;&lt;/li&gt;&lt;li&gt;Wait PREADY -&amp;gt; Clear WRITE, TRANS&lt;/li&gt;&lt;/ul&gt;" vertex="1">
@@ -6347,6 +6347,9 @@
         </mxCell>
         <mxCell id="8JGV5Y9OD40oxYmstzxj-25" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;master_read_transfer&lt;/b&gt;" vertex="1">
           <mxGeometry height="20" width="200" x="560" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="8JGV5Y9OD40oxYmstzxj-27" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1" value="Start Run Phase" vertex="1">
+          <mxGeometry height="40" width="200" x="320" y="520" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
