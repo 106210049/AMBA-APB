@@ -6167,17 +6167,35 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="bIFL6FRH4Tbef4aoIssB-11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="260" width="310" x="480" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="bIFL6FRH4Tbef4aoIssB-10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="260" width="310" x="50" y="240" as="geometry" />
+        </mxCell>
         <mxCell id="bIFL6FRH4Tbef4aoIssB-5" edge="1" parent="1" source="bIFL6FRH4Tbef4aoIssB-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="bIFL6FRH4Tbef4aoIssB-3" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="bIFL6FRH4Tbef4aoIssB-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Sequencer" vertex="1">
-          <mxGeometry height="80" width="120" x="200" y="280" as="geometry" />
+          <mxGeometry height="80" width="120" x="230" y="280" as="geometry" />
         </mxCell>
         <mxCell id="bIFL6FRH4Tbef4aoIssB-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Monitor" vertex="1">
-          <mxGeometry height="80" width="120" x="40" y="400" as="geometry" />
+          <mxGeometry height="80" width="120" x="70" y="400" as="geometry" />
         </mxCell>
         <mxCell id="bIFL6FRH4Tbef4aoIssB-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Driver" vertex="1">
-          <mxGeometry height="80" width="120" x="200" y="400" as="geometry" />
+          <mxGeometry height="80" width="120" x="230" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="bIFL6FRH4Tbef4aoIssB-6" edge="1" parent="1" source="bIFL6FRH4Tbef4aoIssB-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="bIFL6FRH4Tbef4aoIssB-9" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bIFL6FRH4Tbef4aoIssB-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Sequencer" vertex="1">
+          <mxGeometry height="80" width="120" x="490" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="bIFL6FRH4Tbef4aoIssB-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Monitor" vertex="1">
+          <mxGeometry height="80" width="120" x="650" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="bIFL6FRH4Tbef4aoIssB-9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Driver" vertex="1">
+          <mxGeometry height="80" width="120" x="490" y="400" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
