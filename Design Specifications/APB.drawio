@@ -6285,7 +6285,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="ONpJ8LSIHrpjoZ1nrMOS" name="Master Driver Flow Chart">
-    <mxGraphModel dx="2046" dy="1106" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1169" dy="632" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -6362,14 +6362,8 @@
         <mxCell id="8JGV5Y9OD40oxYmstzxj-25" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;master_read_transfer&lt;/b&gt;" vertex="1">
           <mxGeometry height="20" width="200" x="560" y="340" as="geometry" />
         </mxCell>
-        <mxCell id="8JGV5Y9OD40oxYmstzxj-32" edge="1" parent="1" source="8JGV5Y9OD40oxYmstzxj-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="8JGV5Y9OD40oxYmstzxj-11">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="420" y="600" />
-              <mxPoint x="800" y="600" />
-              <mxPoint x="800" y="300" />
-            </Array>
-          </mxGeometry>
+        <mxCell id="8JGV5Y9OD40oxYmstzxj-38" edge="1" parent="1" source="8JGV5Y9OD40oxYmstzxj-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="8JGV5Y9OD40oxYmstzxj-36" value="">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="8JGV5Y9OD40oxYmstzxj-27" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1" value="Item Done" vertex="1">
           <mxGeometry height="40" width="200" x="320" y="520" as="geometry" />
@@ -6378,7 +6372,18 @@
           <mxGeometry height="20" width="40" x="280" y="375" as="geometry" />
         </mxCell>
         <mxCell id="8JGV5Y9OD40oxYmstzxj-34" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="No" vertex="1">
-          <mxGeometry height="20" width="40" x="520" y="375" as="geometry" />
+          <mxGeometry height="20" width="40" x="510" y="375" as="geometry" />
+        </mxCell>
+        <mxCell id="8JGV5Y9OD40oxYmstzxj-37" edge="1" parent="1" source="8JGV5Y9OD40oxYmstzxj-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="8JGV5Y9OD40oxYmstzxj-11">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="800" y="640" />
+              <mxPoint x="800" y="300" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8JGV5Y9OD40oxYmstzxj-36" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;fontStyle=1" value="seq_item != null" vertex="1">
+          <mxGeometry height="80" width="200" x="320" y="600" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
