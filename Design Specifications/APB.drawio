@@ -6322,7 +6322,7 @@
         <mxCell id="8JGV5Y9OD40oxYmstzxj-15" edge="1" parent="1" source="8JGV5Y9OD40oxYmstzxj-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="8JGV5Y9OD40oxYmstzxj-14" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="8JGV5Y9OD40oxYmstzxj-11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1" value="Get item from Sequencer" vertex="1">
+        <mxCell id="8JGV5Y9OD40oxYmstzxj-11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Get item from Sequencer" vertex="1">
           <mxGeometry height="40" width="200" x="320" y="280" as="geometry" />
         </mxCell>
         <mxCell id="8JGV5Y9OD40oxYmstzxj-19" edge="1" parent="1" source="8JGV5Y9OD40oxYmstzxj-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" value="">
@@ -6365,7 +6365,7 @@
         <mxCell id="8JGV5Y9OD40oxYmstzxj-38" edge="1" parent="1" source="8JGV5Y9OD40oxYmstzxj-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="8JGV5Y9OD40oxYmstzxj-36" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="8JGV5Y9OD40oxYmstzxj-27" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1" value="Item Done" vertex="1">
+        <mxCell id="8JGV5Y9OD40oxYmstzxj-27" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Item Done" vertex="1">
           <mxGeometry height="40" width="200" x="320" y="520" as="geometry" />
         </mxCell>
         <mxCell id="8JGV5Y9OD40oxYmstzxj-33" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=1" value="Yes" vertex="1">
