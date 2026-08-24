@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" pages="18">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" pages="19">
   <diagram name="APB Connection" id="jnjCFz4BIrWgyNoqFDZ2">
     <mxGraphModel dx="1061" dy="660" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -6285,14 +6285,14 @@
     </mxGraphModel>
   </diagram>
   <diagram id="ONpJ8LSIHrpjoZ1nrMOS" name="Master Driver Flow Chart">
-    <mxGraphModel dx="1411" dy="763" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1705" dy="922" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="8JGV5Y9OD40oxYmstzxj-4" edge="1" parent="1" source="8JGV5Y9OD40oxYmstzxj-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="8JGV5Y9OD40oxYmstzxj-3" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="8JGV5Y9OD40oxYmstzxj-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1" value="Start Run Phase" vertex="1">
+        <mxCell id="8JGV5Y9OD40oxYmstzxj-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Start Run Phase" vertex="1">
           <mxGeometry height="40" width="200" x="320" y="80" as="geometry" />
         </mxCell>
         <mxCell id="8JGV5Y9OD40oxYmstzxj-12" edge="1" parent="1" source="8JGV5Y9OD40oxYmstzxj-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="8JGV5Y9OD40oxYmstzxj-11" value="">
@@ -6343,7 +6343,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="8JGV5Y9OD40oxYmstzxj-22" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;&quot;&gt;TRANS = 1, WRITE = 1&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;&quot;&gt;Set WRITE_ADDR, STRB, WRITE_DATA,&lt;/span&gt;&lt;/li&gt;&lt;li&gt;Wait PREADY -&amp;gt; Clear WRITE, TRANS&lt;/li&gt;&lt;/ul&gt;" vertex="1">
+        <mxCell id="8JGV5Y9OD40oxYmstzxj-22" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=#ffe6cc;strokeColor=#d79b00;" value="&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;&quot;&gt;&lt;b&gt;TRANS = 1, WRITE = 1&lt;/b&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;&quot;&gt;&lt;b&gt;Set WRITE_ADDR, STRB, WRITE_DATA,&lt;/b&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;Wait PREADY -&amp;gt; Clear WRITE, TRANS&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;" vertex="1">
           <mxGeometry height="80" width="200" x="80" y="360" as="geometry" />
         </mxCell>
         <mxCell id="8JGV5Y9OD40oxYmstzxj-23" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;master_write_transfer&lt;/b&gt;" vertex="1">
@@ -6356,7 +6356,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="8JGV5Y9OD40oxYmstzxj-24" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;&quot;&gt;TRANS = 1, READ = 1&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;&quot;&gt;Set READ_ADDR&lt;/span&gt;&lt;/li&gt;&lt;li&gt;Wait PREADY -&amp;gt; Clear READ, TRANS&lt;/li&gt;&lt;/ul&gt;" vertex="1">
+        <mxCell id="8JGV5Y9OD40oxYmstzxj-24" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;&quot;&gt;&lt;b&gt;TRANS = 1, READ = 1&lt;/b&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;&quot;&gt;&lt;b&gt;Set READ_ADDR&lt;/b&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;Wait PREADY -&amp;gt; Clear READ, TRANS&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;" vertex="1">
           <mxGeometry height="80" width="200" x="560" y="360" as="geometry" />
         </mxCell>
         <mxCell id="8JGV5Y9OD40oxYmstzxj-25" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;master_read_transfer&lt;/b&gt;" vertex="1">
@@ -6388,7 +6388,7 @@
         <mxCell id="8JGV5Y9OD40oxYmstzxj-36" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;fontStyle=1" value="seq_item != null" vertex="1">
           <mxGeometry height="80" width="200" x="320" y="600" as="geometry" />
         </mxCell>
-        <mxCell id="8JGV5Y9OD40oxYmstzxj-39" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1" value="end Run Phase" vertex="1">
+        <mxCell id="8JGV5Y9OD40oxYmstzxj-39" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#f8cecc;strokeColor=#b85450;" value="end Run Phase" vertex="1">
           <mxGeometry height="40" width="200" x="320" y="720" as="geometry" />
         </mxCell>
         <mxCell id="8JGV5Y9OD40oxYmstzxj-41" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=1" value="Yes" vertex="1">
@@ -6401,6 +6401,14 @@
     </mxGraphModel>
   </diagram>
   <diagram id="ocR-vb_5MyoXYb_o_lkh" name="Master Monitor Flow chart">
+    <mxGraphModel dx="2046" dy="1106" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="gEhJI-Uam8yASD4V3_pI" name="Slave Monitor Flow chart">
     <mxGraphModel dx="2046" dy="1106" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
