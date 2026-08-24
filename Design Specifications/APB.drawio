@@ -6571,7 +6571,7 @@
         <mxCell id="LzMAyBNXRRkoRwd-ttxu-16" edge="1" parent="1" source="LzMAyBNXRRkoRwd-ttxu-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="LzMAyBNXRRkoRwd-ttxu-15" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="LzMAyBNXRRkoRwd-ttxu-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="&lt;ul&gt;&lt;li&gt;&lt;b&gt;SELx = tb_apb_top.uut.PSELx&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;WRITE_EN = tb_apb_top.uut.PWRITE;&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;ADDR = tb_apb_top.uut.PADDR;&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;WRITE_STROBES = tb_apb_top.uut.PSTRB;&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;DATA_WRITE = tb_apb_top.uut.PWDATA;&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;" vertex="1">
+        <mxCell id="LzMAyBNXRRkoRwd-ttxu-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=#f8cecc;strokeColor=#b85450;" value="&lt;ul&gt;&lt;li&gt;&lt;b&gt;SELx = tb_apb_top.uut.PSELx&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;WRITE_EN = tb_apb_top.uut.PWRITE;&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;ADDR = tb_apb_top.uut.PADDR;&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;WRITE_STROBES = tb_apb_top.uut.PSTRB;&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;DATA_WRITE = tb_apb_top.uut.PWDATA;&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;" vertex="1">
           <mxGeometry height="120" width="280" x="320" y="480" as="geometry" />
         </mxCell>
         <mxCell id="LzMAyBNXRRkoRwd-ttxu-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" value="Capture DUT signals" vertex="1">
