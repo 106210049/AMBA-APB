@@ -6522,7 +6522,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="gEhJI-Uam8yASD4V3_pI" name="Slave Monitor Flow chart">
-    <mxGraphModel dx="764" dy="1105" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="899" dy="1300" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -6571,7 +6571,7 @@
         <mxCell id="LzMAyBNXRRkoRwd-ttxu-16" edge="1" parent="1" source="LzMAyBNXRRkoRwd-ttxu-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="LzMAyBNXRRkoRwd-ttxu-15" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="LzMAyBNXRRkoRwd-ttxu-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="&lt;ul&gt;&lt;li&gt;SELx = tb_apb_top.uut.PSELx&lt;/li&gt;&lt;li&gt;WRITE_EN = tb_apb_top.uut.PWRITE;&lt;/li&gt;&lt;li&gt;ADDR = tb_apb_top.uut.PADDR;&lt;/li&gt;&lt;li&gt;WRITE_STROBES = tb_apb_top.uut.PSTRB;&lt;/li&gt;&lt;li&gt;DATA_WRITE = tb_apb_top.uut.PWDATA;&lt;/li&gt;&lt;/ul&gt;" vertex="1">
+        <mxCell id="LzMAyBNXRRkoRwd-ttxu-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="&lt;ul&gt;&lt;li&gt;&lt;b&gt;SELx = tb_apb_top.uut.PSELx&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;WRITE_EN = tb_apb_top.uut.PWRITE;&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;ADDR = tb_apb_top.uut.PADDR;&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;WRITE_STROBES = tb_apb_top.uut.PSTRB;&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;DATA_WRITE = tb_apb_top.uut.PWDATA;&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;" vertex="1">
           <mxGeometry height="120" width="280" x="320" y="480" as="geometry" />
         </mxCell>
         <mxCell id="LzMAyBNXRRkoRwd-ttxu-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" value="Capture DUT signals" vertex="1">
@@ -6586,11 +6586,43 @@
         <mxCell id="LzMAyBNXRRkoRwd-ttxu-15" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;fontStyle=1" value="WRITE_EN" vertex="1">
           <mxGeometry height="60" width="200" x="360" y="650" as="geometry" />
         </mxCell>
-        <mxCell id="LzMAyBNXRRkoRwd-ttxu-17" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1" value="DATA_OUT = PRDATA_bus&lt;br&gt;Display READ info" vertex="1">
+        <mxCell id="6UWC0knWciXC7B3Hf4en-3" edge="1" parent="1" source="LzMAyBNXRRkoRwd-ttxu-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="6UWC0knWciXC7B3Hf4en-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="240" y="820" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LzMAyBNXRRkoRwd-ttxu-17" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="DATA_OUT = PRDATA_bus&lt;br&gt;Display READ info" vertex="1">
           <mxGeometry height="80" width="160" x="160" y="640" as="geometry" />
         </mxCell>
-        <mxCell id="LzMAyBNXRRkoRwd-ttxu-19" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1" value="Display WRITE info" vertex="1">
+        <mxCell id="6UWC0knWciXC7B3Hf4en-4" edge="1" parent="1" source="LzMAyBNXRRkoRwd-ttxu-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="6UWC0knWciXC7B3Hf4en-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="680" y="820" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LzMAyBNXRRkoRwd-ttxu-19" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Display WRITE info" vertex="1">
           <mxGeometry height="80" width="160" x="600" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="6UWC0knWciXC7B3Hf4en-5" edge="1" parent="1" source="6UWC0knWciXC7B3Hf4en-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="LzMAyBNXRRkoRwd-ttxu-9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="459.97" y="880" />
+              <mxPoint x="799.97" y="880" />
+              <mxPoint x="799.97" y="300" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6UWC0knWciXC7B3Hf4en-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Send Packet to Scoreboard" vertex="1">
+          <mxGeometry height="40" width="200" x="360" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="3CG90f3iywqVvEBPXZZs-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=1" value="Yes" vertex="1">
+          <mxGeometry height="30" width="60" x="550" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="3CG90f3iywqVvEBPXZZs-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=1" value="No" vertex="1">
+          <mxGeometry height="30" width="60" x="320" y="650" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
