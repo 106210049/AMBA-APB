@@ -6362,7 +6362,7 @@
         <mxCell id="8JGV5Y9OD40oxYmstzxj-25" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;master_read_transfer&lt;/b&gt;" vertex="1">
           <mxGeometry height="20" width="200" x="560" y="340" as="geometry" />
         </mxCell>
-        <mxCell id="8JGV5Y9OD40oxYmstzxj-27" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1" value="Start Run Phase" vertex="1">
+        <mxCell id="8JGV5Y9OD40oxYmstzxj-27" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1" value="Item Done" vertex="1">
           <mxGeometry height="40" width="200" x="320" y="520" as="geometry" />
         </mxCell>
       </root>
