@@ -6414,6 +6414,9 @@
         <mxCell id="Hqoz9kadmIIM5Pi1ChO9-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Start Run Phase" vertex="1">
           <mxGeometry height="40" width="200" x="320" y="80" as="geometry" />
         </mxCell>
+        <mxCell id="Hqoz9kadmIIM5Pi1ChO9-8" edge="1" parent="1" source="Hqoz9kadmIIM5Pi1ChO9-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Hqoz9kadmIIM5Pi1ChO9-7" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="Hqoz9kadmIIM5Pi1ChO9-3" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;fontStyle=1" value="Wait for Reset dessert" vertex="1">
           <mxGeometry height="50" width="200" x="320" y="175" as="geometry" />
         </mxCell>
@@ -6434,6 +6437,9 @@
             <mxPoint x="560" y="140" as="sourcePoint" />
             <mxPoint x="420" y="140" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="Hqoz9kadmIIM5Pi1ChO9-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Create apb_master_seq_item objets" vertex="1">
+          <mxGeometry height="40" width="200" x="320" y="280" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
