@@ -6382,8 +6382,14 @@
             </Array>
           </mxGeometry>
         </mxCell>
+        <mxCell id="8JGV5Y9OD40oxYmstzxj-40" edge="1" parent="1" source="8JGV5Y9OD40oxYmstzxj-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="8JGV5Y9OD40oxYmstzxj-39" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="8JGV5Y9OD40oxYmstzxj-36" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;fontStyle=1" value="seq_item != null" vertex="1">
           <mxGeometry height="80" width="200" x="320" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="8JGV5Y9OD40oxYmstzxj-39" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1" value="end Run Phase" vertex="1">
+          <mxGeometry height="40" width="200" x="320" y="720" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
